@@ -1,0 +1,54 @@
+.Header{
+    width: 100%;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    &__logo{
+        width: calc(50% - 20px);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        min-height: 74px;
+        &_img{
+            width: 90px;
+            @media(max-width: 880px){
+                width: 60px;
+            }
+            @media(max-width: 640px){
+                width: 40px;
+            }
+        }
+    }
+    &__nav{
+        width: calc(50% - 20px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__el{
+        text-transform: uppercase;
+        font-size: 75px;
+        cursor: pointer;
+        transition: color 300ms;
+        &:hover{
+            color: #84D2FB;
+        }
+        @media(max-width: 1300px){
+            font-size: 60px;
+        }
+        @media(max-width: 1050px){
+            font-size: 50px;
+        }
+        @media(max-width: 880px){
+            font-size: 35px;
+        }
+        @media(max-width: 640px){
+            font-size: 20px;
+        }
+        @media(max-width: 400px){
+            font-size: 15px;
+        }
+    }
+}

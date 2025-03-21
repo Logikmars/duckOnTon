@@ -1,0 +1,198 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat';
+    letter-spacing: -0.5px;
+}
+
+.dnone {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+.free_img {
+    width: 0px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1E95D2, #E6F3FA);
+    overflow-x: hidden;
+}
+
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+
+img {
+    user-select: none;
+}
+
+.allcontainer{
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.componentContainer{
+    width: 100%;
+    padding: 0px 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.obrazec{
+    font-family: 'Obrazec';
+}
+
+.finlandica{
+    font-family: 'Finlandica';
+}
+
+
+
+.textShadow{
+    text-shadow: 3.00px 0.00px #000000, 2.77px 1.15px #000000, 2.12px 2.12px #000000, 1.15px 2.77px #000000, 0.00px 3.00px #000000, -1.15px 2.77px #000000, -2.12px 2.12px #000000, -2.77px 1.15px #000000, -3.00px 0.00px #000000, -2.77px -1.15px #000000, -2.12px -2.12px #000000, -1.15px -2.77px #000000, -0.00px -3.00px #000000, 1.15px -2.77px #000000, 2.12px -2.12px #000000, 2.77px -1.15px #000000, 3.00px 7.00px #000000, 2.77px 8.15px #000000, 2.12px 9.12px #000000, 1.15px 9.77px #000000, 0.00px 10.00px #000000, -1.15px 9.77px #000000, -2.12px 9.12px #000000, -2.77px 8.15px #000000, -3.00px 7.00px #000000, -2.77px 5.85px #000000, -2.12px 4.88px #000000, -1.15px 4.23px #000000, -0.00px 4.00px #000000, 1.15px 4.23px #000000, 2.12px 4.88px #000000, 2.77px 5.85px #000000;
+}
