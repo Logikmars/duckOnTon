@@ -31,7 +31,7 @@ const paperItems = [
                     <span class="stretch-helper" />
                 </div>
 
-                <div className='PaperItem_header PaperItem_header_1'>
+                <div className='PaperItem_header PaperItem_header_5'>
                     <span className='PaperItem_header_xxl PaperItem_header__title2'>
                         DUCK OF THE
                     </span>
@@ -57,7 +57,7 @@ const paperItems = [
     {
         header: 
         <>
-            <div className='PaperItem_header PaperItem_header_2'>
+            <div className='PaperItem_header PaperItem_header_8'>
                 <span className='PaperItem_header_xxl PaperItem_header__title1'>
                     FROM an iinocent
                 </span>
@@ -69,7 +69,7 @@ const paperItems = [
                 </span>
                 <span class="stretch-helper" />
             </div>
-            <div className='PaperItem_header PaperItem_header_1'>
+            <div className='PaperItem_header PaperItem_header_7'>
                 <span className='PaperItem_header_xxl PaperItem_header__title5'>
                     A REBEL DUCKLING
                 </span>
@@ -87,14 +87,14 @@ const paperItems = [
     {
         header: 
         <>
-            <div className='PaperItem_header PaperItem_header_1'>
+            <div className='PaperItem_header PaperItem_header_5'>
                 <span className='PaperItem_header_xxl PaperItem_header__title2'>
                     SCALE and
                 </span>
                 <span class="stretch-helper" />
             </div>
-            <div className='PaperItem_header PaperItem_header_3'>
-                <span className='PaperItem_header_xxl PaperItem_header__title2'>
+            <div className='PaperItem_header PaperItem_header_7'>
+                <span className='PaperItem_header_xxl PaperItem_header__title6'>
                     UNBREAKABLE
                 </span>
                 <span class="stretch-helper" />
@@ -118,29 +118,29 @@ const paperItems = [
         // этой страницы нет в фигме
         header: 
         <>
-            <div className='PaperItem_header PaperItem_header_1'>
-                <span className='PaperItem_header_xxl PaperItem_header__title'>
-                    THE DARING
-                </span>
-                <span class="stretch-helper" />
-            </div>
+                <div className='PaperItem_header PaperItem_header_1'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title'>
+                        THE DARING
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
 
-            <div className='PaperItem_header PaperItem_header_1'>
-                <span className='PaperItem_header_xxl PaperItem_header__title2'>
-                    DUCK OF THE
-                </span>
-                <span class="stretch-helper" />
-            </div>
-            <div className='PaperItem_header PaperItem_header_1'>
-                <span className='PaperItem_header_xxl PaperItem_header__title3'>
-                    TON ECOSYSTEM
-                </span>
-                <span class="stretch-helper" />
-            </div>
+                <div className='PaperItem_header PaperItem_header_5'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title2'>
+                        DUCK OF THE
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
+                <div className='PaperItem_header PaperItem_header_1'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title3'>
+                        TON ECOSYSTEM
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
 
 
-            <div className='PaperItem_header_line'></div>
-        </>,
+                <div className='PaperItem_header_line'></div>
+            </>,
         text: <div className='PaperItem_header_description finlandica'>
             TON is built for a huge audience while staying true to its core principles. This unique blend gave us ducks the perfect ground for growth. Now we’re ready to shake up Web3 together.
         </div>

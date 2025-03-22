@@ -63,26 +63,32 @@
 
         &__title {
             font-weight: 700;
-            font-size: 155px;
+            font-size: 158px;
         }
 
         &__title2 {
             font-weight: 700;
-            font-size: 140px;
+            font-size: 142px;
         }
 
         &__title3 {
             font-weight: 700;
-            font-size: 110px;
+            font-size: 112px;
         }
 
         &__title4 {
             font-size: 100px;
             font-weight: 700;
         }
+        &__title5{
+            font-size: 90px;
+        }
+        &__title6{
+            font-size: 135px;
+        }
 
         &_1{
-            height: 120px;
+            height: 130px;
         }
         &_2{
             height: 70px;
@@ -92,6 +98,18 @@
         }
         &_4{
             height: 160px;
+        }
+        &_5{
+            height: 120px;
+        }
+        &_6{
+            height: 150px;
+        }
+        &_7{
+            height: 110px;
+        }
+        &_8{
+            height: 60px;
         }
     }
 
@@ -114,19 +132,19 @@
         }
 
         &_startTitle {
-            font-size: 490px;
+            font-size: 470px;
             text-align: justify !important;
             width: 100%;
         }
 
         &_don {
-            font-size: 248px;
+            font-size: 255px;
             text-align: justify !important;
             width: 100%;
         }
 
         &_meet {
-            font-size: 106px;
+            font-size: 100px;
             text-align: justify !important;
             width: 100%;
         }

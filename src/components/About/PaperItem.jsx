@@ -33,7 +33,7 @@ export default ({ el, index, page, setPage, pagesCount, paperItems }) => {
 
         >
             <div className='PaperItem'>
-                {el.start && el.start}
+                {el.start && <div className='PaperItem_textWrapper'>{el.start}</div>}
                 {el.text ? <div className='PaperItem_textWrapper'>
                     {el.header}{el.text}
                 </div> : <>
