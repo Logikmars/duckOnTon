@@ -6,6 +6,7 @@ import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
 import { ToastContainer } from 'react-toastify';
 import HowToBuy from "./components/HowToBuy/HowToBuy";
+import BornOn from "./components/BornOn/BornOn";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <About />
         <HowToBuy />
         <CA />
+        <BornOn />
       </div>
       <Decor />
       <Footer />
