@@ -17,6 +17,10 @@
             flex-wrap: wrap;
         }
 
+        &_left{
+            letter-spacing: 2px !important;
+        }
+
         &_line {
             width: calc(40% - 15px);
             height: 7px;
