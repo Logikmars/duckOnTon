@@ -8,9 +8,7 @@ export default () => {
                 <img src="/img/x.webp" alt="" />
             </div>
             <div className='Footer__title'>
-                <p className='Footer__title_item outfit Footer__title_item_c'>© 2025. All rights reserved</p>
-                <p className='Footer__title_item outfit Footer__title_item_big'>Born on Memeslab</p>
-                <div className='Footer__title_item'></div>
+                <p className='Footer__title_item outfit Footer__title_item_c'>© 2025. All rights reserved</p>
             </div>
         </div>
         // </div>
