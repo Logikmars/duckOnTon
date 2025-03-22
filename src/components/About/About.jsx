@@ -7,14 +7,21 @@ const paperItems = [
         start: `meow`,
     },
     {
-        header: `The Daring DUCK OF THE TON ECOSYSTEM`,
+        header: <div className='PaperItem_header'>
+            <span className='PaperItem_header_xxl'>
+                THE DARING
+            </span>
+            <span class="stretch-helper" />
+            <br />
+            DUCK OF THE TON ECOSYSTEM
+        </div>,
         text: `We ducks have been part of Telegram for a while, but now it's time to show our true power. I'm here to lead the duck vanguard and help TON reach the top of crypto.`
     },
     {
         img: '/img/paper1.webp'
     },
     {
-        header: `The Daring DUCK OF THE TON ECOSYSTEM`,
+        header: `THE DARING DUCK OF THE TON ECOSYSTEM`,
         text: `We ducks have been part of Telegram for a while, but now it's time to show our true power. I'm here to lead the duck vanguard and help TON reach the top of crypto.`
     },
     {
@@ -40,7 +47,7 @@ const paperItems = [
 
 export default () => {
 
-    const [currentPage, setcurrentPage] = useState(0);
+    const [currentPage, setcurrentPage] = useState(2);
 
     return (
         <div className='componentContainer'>
@@ -50,7 +57,7 @@ export default () => {
                     <div className='About__title_line'></div>
                     <p className='About__title_right About__el obrazec textShadow'>DON ON TON</p>
                 </div>
-                <div className='About__paper'>
+                <div className={`About__paper ${currentPage === 0 && 'About__paper_center'}`} >
                     {
                         paperItems.map((paperEl, index) => {
                             return <PaperItem

@@ -73,10 +73,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: rotate3d(1, 0, 0, 20deg);
         transform-style: preserve-3d;
-
+        transform: rotate3d(1, 0, 0, 20deg);
         perspective: 5000px;
+
+        transition: translate 1000ms;
+
+        &_center {
+            translate: -300px 0px;
+        }
     }
 
     &_page {

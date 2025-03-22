@@ -13,34 +13,31 @@ export default ({ el, index, page, setPage, pagesCount, paperItems }) => {
 
     return (
         <div className='PaperItem_wrapper free_img' style={{
-            justifyContent: `${isOdd ? 'right' : 'left'}`,
-            transform: `rotate3d(0, -1, 0, ${(index < page && !isOdd) ? 180
-                : (index > page + 1 && isOdd) ? -180 : 0}deg)`,
+            justifyContent: `${isOdd ? 'left' : 'right'}`,
+            transform: `rotate3d(0, -1, 0, ${isOdd
+                ? index >= page
+                    ? 0 : 180
+                : index >= page
+                    ? -180 : 0
+                }deg)`,
+
             zIndex: `${zind}`
+
         }} onClick={() => {
             if (isOdd) {
-                setPage(prev => Math.max(prev - 2, 0))
-            } else {
                 setPage(prev => Math.min(prev + 2, pagesCount - (pagesCount % 2 === 0 ? 2 : 1)))
+            } else {
+                setPage(prev => Math.max(prev - 2, 0))
             }
         }}
 
         >
             <div className='PaperItem'>
-            {/* {paperItems.map((el, index) => (
-                isOdd ? (
-                    <div className='PaperItem__text'>
-                        <p className='PaperItem__text_title obrazec'>{el.header}</p>
-                        <div className='PaperItem__text_line'></div>
-                        <p className='PaperItem__text_description finlandica'>{el.text}</p>
-                    </div>
-                    
-                ) : (
-                    <div className='PaperItem__img'>
-                        <img src={el.img} alt="" className='PaperItem__img_img'/>
-                    </div>
-                )
-            ))} */}
+                {el.text ? <>
+                    {el.header}
+                </> : <>
+                    <img src={el.img} alt="" />
+                </>}
             </div>
         </div>
     )
