@@ -34,9 +34,9 @@ export default ({ el, index, page, setPage, pagesCount, paperItems }) => {
         >
             <div className='PaperItem'>
                 {el.start && el.start}
-                {el.text ? <>
+                {el.text ? <div className='PaperItem_textWrapper'>
                     {el.header}{el.text}
-                </> : <>
+                </div> : <>
                     <img src={el.img} alt="" />
                 </>}
             </div>

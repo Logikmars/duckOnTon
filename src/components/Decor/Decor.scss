@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    animation: sea 100s infinite linear;
 
     @media(max-width: 800px) {
 
@@ -34,7 +35,6 @@
     }
 
 
-    animation: sea 100s infinite linear;
 
     @keyframes sea {
         0% {

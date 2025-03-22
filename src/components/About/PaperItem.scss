@@ -14,6 +14,12 @@
     overflow: hidden;
     box-shadow: 0px 4px #9C9C9C;
 
+
+    &_textWrapper {
+        // padding: 20px;
+        // TASK тут паддинг как в макете, это на весь текст от краёв страницы
+    }
+
     img {
         min-width: 650px;
         min-height: 1050px;
@@ -42,42 +48,50 @@
             font-family: 'Obrazec';
             text-transform: uppercase;
         }
-        &_line{
+
+        &_line {
             width: 100%;
             background-color: #000;
             height: 5px;
             margin: 0 auto;
         }
-        &_description{
+
+        &_description {
             color: #000;
             font-size: 40px;
             padding: 5px 10px;
         }
-        &__title{
+
+        &__title {
             font-weight: 700;
             font-size: 165px;
         }
-        &__title2{
+
+        &__title2 {
             font-weight: 700;
             font-size: 145px;
         }
-        &__title3{
+
+        &__title3 {
             font-weight: 700;
             font-size: 120px;
         }
-        &__title4{
+
+        &__title4 {
             font-size: 100px;
             font-weight: 700;
         }
 
 
     }
-    &_start{
+
+    &_start {
         text-align: justify !important;
         color: #000;
         display: flex;
         flex-wrap: wrap;
         align-content: start;
+
         .stretch-helper::after {
             content: '';
             display: inline-block;
@@ -88,22 +102,26 @@
             color: #000;
             line-height: 0.75;
         }
-        &_startTitle{
+
+        &_startTitle {
             font-size: 490px;
             text-align: justify !important;
             width: 100%;
         }
-        &_don{
+
+        &_don {
             font-size: 248px;
             text-align: justify !important;
             width: 100%;
         }
-        &_meet{
+
+        &_meet {
             font-size: 106px;
             text-align: justify !important;
             width: 100%;
         }
-        img{
+
+        img {
             margin-top: 30px;
             max-width: 630px;
             min-width: 630px;
