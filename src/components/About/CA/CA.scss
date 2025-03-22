@@ -56,6 +56,7 @@
             width: 100%;
             color: #25A3E1;
             font-weight: 700;
+            letter-spacing: -5px;
             @media(max-width: 1500px){
                 font-size: 30px;
             }
@@ -79,6 +80,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 700;
+            letter-spacing: -10px;
             cursor: pointer;
             @media(max-width: 1500px){
                 font-size: 30px;
@@ -114,6 +116,7 @@
             text-align: center;
             font-size: 36px;
             font-weight: 700;
+            letter-spacing: -5px;
             @media(max-width: 1500px){
                 font-size: 20px;
             }

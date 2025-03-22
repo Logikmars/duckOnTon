@@ -12,7 +12,7 @@
     user-select: none;
     transform-style: preserve-3d;
     overflow: hidden;
-    box-shadow: 0px 4px rgba(92, 92, 92);
+    box-shadow: 0px 4px #9C9C9C;
 
     img {
         min-width: 650px;
@@ -25,6 +25,7 @@
     &_header {
         text-align: justify;
         color: #000;
+        padding: 5px 10px;
 
         .stretch-helper::after {
             content: '';
@@ -38,6 +39,76 @@
 
         &_xxl {
             font-size: 90px;
+            font-family: 'Obrazec';
+            text-transform: uppercase;
+        }
+        &_line{
+            width: 100%;
+            background-color: #000;
+            height: 5px;
+            margin: 0 auto;
+        }
+        &_description{
+            color: #000;
+            font-size: 40px;
+            padding: 5px 10px;
+        }
+        &__title{
+            font-weight: 700;
+            font-size: 165px;
+        }
+        &__title2{
+            font-weight: 700;
+            font-size: 145px;
+        }
+        &__title3{
+            font-weight: 700;
+            font-size: 120px;
+        }
+        &__title4{
+            font-size: 100px;
+            font-weight: 700;
+        }
+
+
+    }
+    &_start{
+        text-align: justify !important;
+        color: #000;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: start;
+        .stretch-helper::after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+
+        span {
+            color: #000;
+            line-height: 0.75;
+        }
+        &_startTitle{
+            font-size: 490px;
+            text-align: justify !important;
+            width: 100%;
+        }
+        &_don{
+            font-size: 248px;
+            text-align: justify !important;
+            width: 100%;
+        }
+        &_meet{
+            font-size: 106px;
+            text-align: justify !important;
+            width: 100%;
+        }
+        img{
+            margin-top: 30px;
+            max-width: 630px;
+            min-width: 630px;
+            max-height: 400px;
+            min-height: 400px;
         }
     }
 
