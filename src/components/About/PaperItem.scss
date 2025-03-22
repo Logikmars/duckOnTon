@@ -16,8 +16,7 @@
 
 
     &_textWrapper {
-        // padding: 20px;
-        // TASK тут паддинг как в макете, это на весь текст от краёв страницы
+        padding: 5px 16px;
     }
 
     img {
@@ -64,17 +63,17 @@
 
         &__title {
             font-weight: 700;
-            font-size: 165px;
+            font-size: 155px;
         }
 
         &__title2 {
             font-weight: 700;
-            font-size: 145px;
+            font-size: 140px;
         }
 
         &__title3 {
             font-weight: 700;
-            font-size: 120px;
+            font-size: 110px;
         }
 
         &__title4 {
@@ -82,7 +81,18 @@
             font-weight: 700;
         }
 
-
+        &_1{
+            height: 120px;
+        }
+        &_2{
+            height: 70px;
+        }
+        &_3{
+            height: 140px;
+        }
+        &_4{
+            height: 160px;
+        }
     }
 
     &_start {
