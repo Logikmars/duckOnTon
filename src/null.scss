@@ -157,6 +157,7 @@ body {
     align-content: space-between;
     justify-content: center;
     overflow: hidden;
+
     
 }
 
@@ -173,6 +174,10 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
+    gap: 50px;
+    @media(max-width: 1000px){
+        gap: 25px;
+    }
 }
 
 .componentContainer{
@@ -181,6 +186,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width: 1000px){
+        padding: 0px 10px;
+    }
 }
 
 .obrazec{
@@ -189,6 +197,10 @@ img {
 
 .finlandica{
     font-family: 'Finlandica';
+}
+
+.outfit{
+    font-family: 'Outfit';
 }
 
 

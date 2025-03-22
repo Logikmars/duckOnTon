@@ -1,0 +1,72 @@
+@keyframes shake {
+    0%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+        rotate: 0deg;
+    }
+    33%{
+        transform: translate(30px, -10px);
+        rotate: -5deg;
+    }
+    66%{
+        transform: translate(-20px, 10px);
+        rotate: 2deg;
+    }
+    100%{
+        transform: translate(0px, 0px);
+        rotate: 0deg;
+    }
+}
+
+.Decor{
+    width: 100%;
+    background-image: url('/img/bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    &__info{
+        width: 100% !important;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        &_table{
+            animation: shake 4s infinite;
+            width: 10% !important;
+            justify-content: start !important;
+            bottom: 30vh;
+            left: 20%;
+            img{
+                width: 150%;
+            }
+        }
+        &_duck{
+            align-items: flex-end !important;
+            justify-content: center !important;
+            z-index: 999;
+            width: 80% !important;
+            img{
+                width: 100%;
+                min-width: 750px;
+                @media(max-height: 670px){
+                    width: 90%;
+                }
+                @media(max-height: 470px){
+                    width: 60%;
+                }
+            }
+        }
+        &_table2{
+            animation: shake 7s infinite;
+            width: 10% !important;
+            justify-content: end !important;
+            bottom: 30vh;
+            right: 20%;
+            img{
+                width: 150%;
+            }
+        }
+    }
+}

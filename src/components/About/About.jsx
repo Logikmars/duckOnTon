@@ -45,11 +45,11 @@ export default () => {
     return (
         <div className='componentContainer'>
             <div className='About'>
-                {/* <div className='About__title'>
+                <div className='About__title'>
                     <p className='About__title_left About__el obrazec textShadow'>about</p>
                     <div className='About__title_line'></div>
                     <p className='About__title_right About__el obrazec textShadow'>DON ON TON</p>
-                </div> */}
+                </div>
                 <div className='About__paper'>
                     {
                         paperItems.map((paperEl, index) => {
@@ -59,6 +59,7 @@ export default () => {
                                 page={currentPage}
                                 setPage={setcurrentPage}
                                 pagesCount={paperItems.length}
+                                paperItems={paperItems}
                             />
                         })
                     }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './PaperItem.scss';
-export default ({ el, index, page, setPage, pagesCount }) => {
+export default ({ el, index, page, setPage, pagesCount, paperItems }) => {
     const [isOdd, setisOdd] = useState(index % 2 === 0);
 
     const [zind, setzind] = useState(Math.abs(index - page) * -1);
@@ -27,7 +27,20 @@ export default ({ el, index, page, setPage, pagesCount }) => {
 
         >
             <div className='PaperItem'>
-                {index}
+            {/* {paperItems.map((el, index) => (
+                isOdd ? (
+                    <div className='PaperItem__text'>
+                        <p className='PaperItem__text_title obrazec'>{el.header}</p>
+                        <div className='PaperItem__text_line'></div>
+                        <p className='PaperItem__text_description finlandica'>{el.text}</p>
+                    </div>
+                    
+                ) : (
+                    <div className='PaperItem__img'>
+                        <img src={el.img} alt="" className='PaperItem__img_img'/>
+                    </div>
+                )
+            ))} */}
             </div>
         </div>
     )
