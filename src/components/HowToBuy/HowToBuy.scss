@@ -28,9 +28,10 @@
         }
     }
     &__wrapper{
+        padding: 0px 70px;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: start;
         gap: 70px;
     }
