@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './CA.scss';
 
 export default () => {
-    
+
     const items = [
         { text: "SUPPLY: 1.000.000.000" },
         { text: "TON NETWORK" },
@@ -12,7 +12,7 @@ export default () => {
     ];
 
     const contractAddress = "EQB420yQsZobGcy0VYDfSKHpG2QQlw-j1f_tPu1J488I__PX";
-    
+
     const copyToClipboard = async () => {
         try {
             await navigator.clipboard.writeText(contractAddress);
@@ -27,12 +27,12 @@ export default () => {
         <div className='componentContainer'>
             <div className='CA'>
                 <div className='CA__top'>
-                    <p className='CA__top_title obrazec'>CA: </p>
+                    <p className='CA__top_title obrazec'>CA:</p>
                     <div className='CA__top_container'>
                         <p className='CA__top_ca finlandica'>{contractAddress}</p>
-                        <p 
-                            className='CA__top_clipboard finlandica' 
-                            onClick={copyToClipboard} 
+                        <p
+                            className='CA__top_clipboard finlandica'
+                            onClick={copyToClipboard}
                         >
                             COPY TO CLIPBOARD
                         </p>
