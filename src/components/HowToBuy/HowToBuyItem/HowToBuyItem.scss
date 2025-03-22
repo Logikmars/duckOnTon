@@ -1,0 +1,64 @@
+.HowToBuyItem{
+    width: calc(33% - 70px) !important;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-content: start;
+    @media(max-width: 800px){
+        width: 80% !important;
+        min-height: 400px;
+    }
+    &__img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-wrap: wrap;
+        &_img{
+            width: 100%;
+        }
+    }
+    &__index{
+        width: 100% !important;
+        font-size: 80px;
+        display: flex;
+        justify-content: start !important;
+        right: 50px;
+        @media(max-width: 1200px){
+            font-size: 50px;
+        }
+        @media(max-width: 800px){
+            right: 20px;
+        }
+        &_text{
+            padding: 5px 30px;
+            background-color: #25A3E1;
+            border-radius: 20px;
+            border: 2px solid #000;
+            border-bottom: 10px solid #000;
+            @media(max-width: 1200px){
+                padding: 5px 15px;
+            }
+        }
+    }
+    &__description{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        &_title{
+            font-weight: 800;
+            font-size: 41px;
+            @media(max-width: 1200px){
+                font-size: 30px;
+            }
+        }
+        &_description{
+            font-size: 26px;
+            @media(max-width: 1200px){
+                font-size: 20px;
+            }
+        }
+    }
+}

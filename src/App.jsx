@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
 import { ToastContainer } from 'react-toastify';
+import HowToBuy from "./components/HowToBuy/HowToBuy";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Header />
         {/* <Hero /> */}
         <About />
+        <HowToBuy />
         <CA />
       </div>
       <Decor />
