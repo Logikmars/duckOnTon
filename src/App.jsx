@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="allcontainer">
-      <Header />
+      {/* <Header /> */}
       {/* <Hero /> */}
       <About />
     </div>

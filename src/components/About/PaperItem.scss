@@ -1,0 +1,17 @@
+.PaperItem {
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 1000px;
+    max-height: 1000px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 5px solid red;
+    color: black;
+    font-size: 100px;
+    user-select: none;
+    transform-style: preserve-3d;
+
+    &_wrapper {
+        transition: transform 1s ease-in-out;
+    }
+}
