@@ -11,7 +11,7 @@ export default () => {
         { text: "LP: LOCKED" },
     ];
 
-    const contractAddress = "EQB420yQsZobGcy0VYDfSKHpG2QQlw-j1f_tPu1J488I__PX";
+    const contractAddress = "COMING SOON";
 
     const copyToClipboard = async () => {
         try {

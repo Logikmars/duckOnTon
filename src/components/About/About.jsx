@@ -55,28 +55,28 @@ const paperItems = [
         img: '/img/paper1.webp'
     },
     {
-        header: 
-        <>
-            <div className='PaperItem_header PaperItem_header_8'>
-                <span className='PaperItem_header_xxl PaperItem_header__title1'>
-                    FROM an iinocent
-                </span>
-                <span class="stretch-helper" />
-            </div>
-            <div className='PaperItem_header PaperItem_header_3'>
-                <span className='PaperItem_header_xxl PaperItem_header__title'>
-                    STICKER to
-                </span>
-                <span class="stretch-helper" />
-            </div>
-            <div className='PaperItem_header PaperItem_header_7'>
-                <span className='PaperItem_header_xxl PaperItem_header__title5'>
-                    A REBEL DUCKLING
-                </span>
-                <span class="stretch-helper" />
-            </div>
-            <div className='PaperItem_header_line'></div>
-        </>,
+        header:
+            <>
+                <div className='PaperItem_header PaperItem_header_8'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title1'>
+                        FROM an iinocent
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
+                <div className='PaperItem_header PaperItem_header_3'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title'>
+                        STICKER to
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
+                <div className='PaperItem_header PaperItem_header_7'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title5'>
+                        A REBEL DUCKLING
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
+                <div className='PaperItem_header_line'></div>
+            </>,
         text: <div className='PaperItem_header_description CrimsonPro'>
             Despite attempts to suppress us, ducks spread everywhere—stickers, memes, even shout-outs from Paul Du Rove. All these symbols merged to form me, a rebellious duckling guiding TON’s next evolution.
         </div>
@@ -85,28 +85,28 @@ const paperItems = [
         img: '/img/duck2.webp'
     },
     {
-        header: 
-        <>
-            <div className='PaperItem_header PaperItem_header_6'>
-                <span className='PaperItem_header_xxl PaperItem_header__title7'>
-                    SCALE and
-                </span>
-                <span class="stretch-helper" />
-            </div>
-            <div className='PaperItem_header PaperItem_header_7'>
-                <span className='PaperItem_header_xxl PaperItem_header__title6'>
-                    UNBREAKABLE
-                </span>
-                <span class="stretch-helper" />
-            </div>
-            <div className='PaperItem_header PaperItem_header_4'>
-                <span className='PaperItem_header_xxl PaperItem_header__title2'>
-                    DUCK POWER
-                </span>
-                <span class="stretch-helper" />
-            </div>
-            <div className='PaperItem_header_line'></div>
-        </>,
+        header:
+            <>
+                <div className='PaperItem_header PaperItem_header_6'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title7'>
+                        SCALE and
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
+                <div className='PaperItem_header PaperItem_header_7'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title6'>
+                        UNBREAKABLE
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
+                <div className='PaperItem_header PaperItem_header_4'>
+                    <span className='PaperItem_header_xxl PaperItem_header__title2'>
+                        DUCK POWER
+                    </span>
+                    <span class="stretch-helper" />
+                </div>
+                <div className='PaperItem_header_line'></div>
+            </>,
         text: <div className='PaperItem_header_description CrimsonPro'>
             TON is built for a huge audience while staying true to its core principles. This unique blend gave us ducks the perfect ground for growth. Now we’re ready to shake up Web3 together.
         </div>
@@ -116,8 +116,8 @@ const paperItems = [
     },
     {
         // этой страницы нет в фигме
-        header: 
-        <>
+        header:
+            <>
                 <div className='PaperItem_header PaperItem_header_1'>
                     <span className='PaperItem_header_xxl PaperItem_header__title'>
                         THE DARING
@@ -160,7 +160,7 @@ export default () => {
         <div className='componentContainer'>
             <div className='About'>
                 <div className='About__title'>
-                    <p className='About__title_left About__el obrazec textShadow'>about</p>
+                    <p className='About__title_left About__el obrazec textShadow'>ABOUT</p>
                     <div className='About__title_line'></div>
                     <p className='About__title_right About__el obrazec textShadow'>DON ON TON</p>
                 </div>
@@ -177,9 +177,6 @@ export default () => {
                             />
                         })
                     }
-                </div>
-                <div className='About_page'>
-                    {currentPage}
                 </div>
             </div>
         </div>

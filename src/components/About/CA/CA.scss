@@ -5,10 +5,11 @@
     align-items: center;
     background-color: #FFF;
     flex-wrap: wrap;
-    border: 1px solid rgba($color: #000000, $alpha: .3);
-    border-left: none;
-    padding: 10px;
+    // border: 1px solid rgba($color: #000000, $alpha: .3);
+    border: 4px solid #d8d8d8;
     box-shadow: 0px 4px 4px #0004;
+    // border-left: none;
+    padding: 10px;
     border-radius: 10px;
 
     &__top {
@@ -31,6 +32,11 @@
             color: #25A3E1;
             font-size: 150px;
             text-transform: uppercase;
+            letter-spacing: -8px !important;
+
+
+            text-shadow: 3.00px 0.00px #1a75a3, 2.77px 1.15px #1a75a3, 2.12px 2.12px #1a75a3, 1.15px 2.77px #1a75a3, 0.00px 3.00px #1a75a3, -1.15px 2.77px #1a75a3, -2.12px 2.12px #1a75a3,
+                -2.77px 1.15px #1a75a3, -3.00px 0.00px #1a75a3, -2.77px -1.15px #1a75a3, -2.12px -2.12px #1a75a3, -1.15px -2.77px #1a75a3, -0.00px -3.00px #1a75a3, 1.15px -2.77px #1a75a3, 2.12px -2.12px #1a75a3, 2.77px -1.15px #1a75a3, 7.00px 4.00px #1a75a3, 6.77px 5.15px #1a75a3, 6.12px 6.12px #1a75a3, 5.15px 6.77px #1a75a3, 4.00px 7.00px #1a75a3, 2.85px 6.77px #1a75a3, 1.88px 6.12px #1a75a3, 1.23px 5.15px #1a75a3, 1.00px 4.00px #1a75a3, 1.23px 2.85px #1a75a3, 1.88px 1.88px #1a75a3, 2.85px 1.23px #1a75a3, 4.00px 1.00px #1a75a3, 5.15px 1.23px #1a75a3, 6.12px 1.88px #1a75a3, 6.77px 2.85px #1a75a3;
 
             @media(max-width: 1500px) {
                 font-size: 100px;
@@ -146,6 +152,10 @@
             font-size: 40px;
             font-weight: 700;
             letter-spacing: -5px;
+
+
+            border: 4px solid #1a75a3;
+
 
             @media(max-width: 1500px) {
                 font-size: 20px;

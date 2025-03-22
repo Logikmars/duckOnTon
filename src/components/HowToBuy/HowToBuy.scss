@@ -9,6 +9,10 @@
     align-content: start;
     background-repeat: repeat;
     animation: footerBg 300s infinite linear;
+    overflow: hidden;
+
+    border: 4px solid #001b2e;
+    box-shadow: 0px 4px 4px #0004;
 
     @media(max-width: 800px) {
         min-height: 700px;
@@ -19,7 +23,7 @@
         font-size: 150px;
         width: 100%;
         padding: 22px 70px;
-        letter-spacing: -20px;
+        letter-spacing: -8px !important;
 
         @media(max-width: 1000px) {
             text-align: center;
@@ -40,7 +44,6 @@
         justify-content: center;
         align-items: start;
         height: 1000px;
-        overflow: hidden;
 
     }
 }
