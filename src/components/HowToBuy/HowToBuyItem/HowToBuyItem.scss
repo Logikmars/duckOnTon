@@ -1,65 +1,87 @@
-.HowToBuyItem{
-    width: calc(33% - 70px) !important;
+.HowToBuyItem {
+    min-width: 500px;
     min-height: 700px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
-    align-content: start;
-    @media(max-width: 800px){
+
+    &_wrapper {
+        align-items: start !important;
+        transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+    }
+
+
+    @media(max-width: 800px) {
         width: 80% !important;
         min-height: 400px;
     }
-    &__img{
+
+    &__img {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: end;
         flex-wrap: wrap;
-        &_img{
+
+        &_img {
             width: 100%;
         }
     }
-    &__index{
+
+    &__index {
         width: 100% !important;
         font-size: 80px;
         display: flex;
         justify-content: start !important;
         right: 50px;
-        @media(max-width: 1200px){
+
+        @media(max-width: 1200px) {
             font-size: 50px;
         }
-        @media(max-width: 800px){
+
+        @media(max-width: 800px) {
             right: 20px;
         }
-        &_text{
-            padding: 5px 30px;
+
+        &_text {
+            padding: 0px 30px;
             background-color: #25A3E1;
             border-radius: 20px;
             border: 2px solid #000;
             border-bottom: 10px solid #000;
             font-weight: 800;
-            @media(max-width: 1200px){
+            min-width: 110px;
+            min-height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media(max-width: 1200px) {
                 padding: 5px 15px;
             }
         }
     }
-    &__description{
+
+    &__description {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        &_title{
+
+        &_title {
             font-weight: 800;
             font-size: 41px;
             text-shadow: 3.00px 0.00px #000000, 2.77px 1.15px #000000, 2.12px 2.12px #000000, 1.15px 2.77px #000000, 0.00px 3.00px #000000, -1.15px 2.77px #000000, -2.12px 2.12px #000000, -2.77px 1.15px #000000, -3.00px 0.00px #000000, -2.77px -1.15px #000000, -2.12px -2.12px #000000, -1.15px -2.77px #000000, -0.00px -3.00px #000000, 1.15px -2.77px #000000, 2.12px -2.12px #000000, 2.77px -1.15px #000000, 3.00px 3.00px #000000, 2.77px 4.15px #000000, 2.12px 5.12px #000000, 1.15px 5.77px #000000, 0.00px 6.00px #000000, -1.15px 5.77px #000000, -2.12px 5.12px #000000, -2.77px 4.15px #000000, -3.00px 3.00px #000000, -2.77px 1.85px #000000, -2.12px 0.88px #000000, -1.15px 0.23px #000000, -0.00px 0.00px #000000, 1.15px 0.23px #000000, 2.12px 0.88px #000000, 2.77px 1.85px #000000;
-            @media(max-width: 1200px){
+
+            @media(max-width: 1200px) {
                 font-size: 30px;
             }
         }
-        &_description{
+
+        &_description {
             font-size: 26px;
             text-shadow: 3.00px 0.00px #000000, 2.77px 1.15px #000000, 2.12px 2.12px #000000, 1.15px 2.77px #000000, 0.00px 3.00px #000000, -1.15px 2.77px #000000, -2.12px 2.12px #000000, -2.77px 1.15px #000000, -3.00px 0.00px #000000, -2.77px -1.15px #000000, -2.12px -2.12px #000000, -1.15px -2.77px #000000, -0.00px -3.00px #000000, 1.15px -2.77px #000000, 2.12px -2.12px #000000, 2.77px -1.15px #000000, 3.00px 3.00px #000000, 2.77px 4.15px #000000, 2.12px 5.12px #000000, 1.15px 5.77px #000000, 0.00px 6.00px #000000, -1.15px 5.77px #000000, -2.12px 5.12px #000000, -2.77px 4.15px #000000, -3.00px 3.00px #000000, -2.77px 1.85px #000000, -2.12px 0.88px #000000, -1.15px 0.23px #000000, -0.00px 0.00px #000000, 1.15px 0.23px #000000, 2.12px 0.88px #000000, 2.77px 1.85px #000000;
-            @media(max-width: 1200px){
+
+            @media(max-width: 1200px) {
                 font-size: 20px;
             }
         }

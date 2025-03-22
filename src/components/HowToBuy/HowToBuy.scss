@@ -1,4 +1,4 @@
-.HowToBuy{
+.HowToBuy {
     width: 100%;
     height: 1200px;
     display: flex;
@@ -8,32 +8,39 @@
     border-radius: 20px;
     align-content: start;
     background-repeat: repeat;
-    animation: footerBg 100s infinite linear;
-    @media(max-width: 800px){
+    animation: footerBg 300s infinite linear;
+
+    @media(max-width: 800px) {
         min-height: 700px;
         max-height: 1100px;
     }
-    &__title{
+
+    &__title {
         font-size: 150px;
         width: 100%;
         padding: 22px 70px;
         letter-spacing: -20px;
-        @media(max-width: 1000px){
+
+        @media(max-width: 1000px) {
             text-align: center;
         }
-        @media(max-width: 800px){
+
+        @media(max-width: 800px) {
             font-size: 100px;
         }
-        @media(max-width: 530px){
+
+        @media(max-width: 530px) {
             font-size: 60px;
         }
     }
-    &__wrapper{
-        padding: 0px 70px;
+
+    &__wrapper {
         width: 100%;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: start;
-        gap: 70px;
+        height: 1000px;
+        overflow: hidden;
+
     }
 }

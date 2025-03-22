@@ -53,12 +53,14 @@
             background-color: #000;
             height: 5px;
             margin: 0 auto;
+            margin-top: 10px;
         }
 
         &_description {
             color: #000;
             font-size: 40px;
             padding: 5px 10px;
+            margin-top: 10px;
         }
 
         &__title {
@@ -80,38 +82,48 @@
             font-size: 100px;
             font-weight: 700;
         }
-        &__title5{
+
+        &__title5 {
             font-size: 90px;
         }
-        &__title6{
+
+        &__title6 {
             font-size: 135px;
         }
-        &__title7{
+
+        &__title7 {
             font-size: 173px;
         }
 
-        &_1{
+        &_1 {
             height: 130px;
         }
-        &_2{
+
+        &_2 {
             height: 70px;
         }
-        &_3{
+
+        &_3 {
             height: 140px;
         }
-        &_4{
+
+        &_4 {
             height: 160px;
         }
-        &_5{
+
+        &_5 {
             height: 120px;
         }
-        &_6{
+
+        &_6 {
             height: 150px;
         }
-        &_7{
+
+        &_7 {
             height: 110px;
         }
-        &_8{
+
+        &_8 {
             height: 60px;
         }
     }
@@ -153,7 +165,7 @@
         }
 
         img {
-            margin-top: 82px;
+            margin-top: 50px;
             max-width: 630px;
             min-width: 630px;
             max-height: 400px;

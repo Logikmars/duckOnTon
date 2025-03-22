@@ -6,9 +6,10 @@
     background-color: #FFF;
     flex-wrap: wrap;
     border: 1px solid rgba($color: #000000, $alpha: .3);
+    border-left: none;
     padding: 10px;
     box-shadow: 0px 4px 4px #0004;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
 
     &__top {
         width: 100%;
@@ -51,12 +52,12 @@
 
         &_container {
             // width: calc(90% - 20px);
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: start;
-            align-items: end;
-            gap: 10px;
+            // display: flex;
+            // flex-wrap: wrap;
+            // align-items: center;
+            // justify-content: start;
+            // align-items: end;
+            // gap: 10px;
             padding-top: 10px;
 
             @media(max-width: 720px) {
@@ -70,6 +71,7 @@
             color: #25A3E1;
             font-weight: 700;
             letter-spacing: -5px;
+
 
             @media(max-width: 1500px) {
                 font-size: 30px;
@@ -101,6 +103,7 @@
             font-weight: 700;
             letter-spacing: -10px;
             cursor: pointer;
+            margin-top: 10px;
 
             @media(max-width: 1500px) {
                 font-size: 30px;
@@ -137,10 +140,10 @@
             background-color: #25A3E1;
             border: 1px solid rgba($color: #000000, $alpha: .3);
             border-radius: 20px;
-            padding: 11px 17px;
-            width: calc(33% - 10px);
+            padding: 11px 24px;
+            // width: calc(33% - 10px);
             text-align: center;
-            font-size: 46px;
+            font-size: 40px;
             font-weight: 700;
             letter-spacing: -5px;
 
