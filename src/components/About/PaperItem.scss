@@ -86,6 +86,9 @@
         &__title6{
             font-size: 135px;
         }
+        &__title7{
+            font-size: 173px;
+        }
 
         &_1{
             height: 130px;
@@ -128,7 +131,7 @@
 
         span {
             color: #000;
-            line-height: 0.75;
+            line-height: 0.8;
         }
 
         &_startTitle {
@@ -150,11 +153,11 @@
         }
 
         img {
-            margin-top: 30px;
+            margin-top: 82px;
             max-width: 630px;
             min-width: 630px;
             max-height: 400px;
-            min-height: 400px;
+            min-height: 320px;
         }
     }
 
