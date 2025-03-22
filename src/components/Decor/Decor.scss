@@ -1,71 +1,92 @@
 @keyframes shake {
-    0%{
-        transform: translateX(0px);
-        transform: translateY(0px);
+    0% {
         rotate: 0deg;
     }
-    33%{
-        transform: translate(30px, -10px);
+
+    33% {
         rotate: -5deg;
     }
-    66%{
-        transform: translate(-20px, 10px);
+
+    66% {
         rotate: 2deg;
     }
-    100%{
-        transform: translate(0px, 0px);
+
+    100% {
         rotate: 0deg;
     }
 }
 
-.Decor{
+.Decor {
     width: 100%;
     background-image: url('/img/bg.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 90vh;
+    background-repeat: repeat-x;
+    height: 600px;
+    background-size: 1200px 600px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    &__info{
+
+    @media(max-width: 800px) {
+
+        height: 300px;
+        background-size: 600px 300px;
+    }
+
+
+    animation: sea 100s infinite linear;
+
+    @keyframes sea {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: -100% 0%;
+        }
+    }
+
+    &__info {
         width: 100% !important;
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
-        &_table{
+        justify-content: center;
+
+        &_table {
             animation: shake 4s infinite;
-            width: 10% !important;
-            justify-content: start !important;
-            bottom: 30vh;
-            left: 20%;
-            img{
-                width: 150%;
+            align-items: end !important;
+            left: 280px;
+            bottom: 120px;
+
+            @media(max-width: 1300px) {
+                left: 20vw;
+                bottom: 15vw;
+            }
+
+            &_right {
+                left: -200px;
+                bottom: 150px;
+                animation: shake 7s infinite;
+
+                @media(max-width: 1300px) {
+                    left: -20vw;
+                    bottom: 15vw;
+                }
+            }
+
+            img {
+                width: 15vw;
+                max-width: 200px;
             }
         }
-        &_duck{
+
+        &_duck {
             align-items: flex-end !important;
             justify-content: center !important;
             z-index: 999;
-            width: 80% !important;
-            img{
-                width: 100%;
-                min-width: 750px;
-                @media(max-height: 670px){
-                    width: 90%;
-                }
-                @media(max-height: 470px){
-                    width: 60%;
-                }
-            }
-        }
-        &_table2{
-            animation: shake 7s infinite;
-            width: 10% !important;
-            justify-content: end !important;
-            bottom: 30vh;
-            right: 20%;
-            img{
-                width: 150%;
+
+            img {
+                width: 90vw;
+                max-width: 1000px;
             }
         }
     }

@@ -1,6 +1,7 @@
 import './Footer.scss';
-export default () => {return (
-    <div className='componentContainer'>
+export default () => {
+    return (
+        // <div className='componentContainer'>
         <div className='Footer'>
             <div className='Footer__social'>
                 <img src="/img/tg.svg" alt="" />
@@ -12,5 +13,6 @@ export default () => {return (
                 <div className='Footer__title_item'></div>
             </div>
         </div>
-    </div>
-)}
+        // </div>
+    )
+}

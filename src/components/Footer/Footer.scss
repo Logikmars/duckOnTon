@@ -1,4 +1,4 @@
-.Footer{
+.Footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -9,42 +9,65 @@
     border-top: 5px solid #447DA6;
     padding: 50px 20px 100px 20px;
     gap: 40px;
-    &__social{
+
+
+    animation: footerBg 100s infinite linear;
+
+    @keyframes footerBg {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: 100% 200%;
+        }
+    }
+
+    &__social {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        img{
+
+        img {
             width: 89px;
         }
     }
-    &__title{
+
+    &__title {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        @media(max-width: 830px){
+
+        @media(max-width: 830px) {
             flex-wrap: wrap;
         }
-        &_item{
+
+        &_item {
             width: calc(33% - 20px);
             font-weight: 700;
-            @media(max-width: 830px){
+
+            @media(max-width: 830px) {
                 width: 100%;
             }
-            &_c{
+
+            &_c {
                 font-size: 29px;
                 text-align: center;
-                @media(max-width: 1350px){
+
+                @media(max-width: 1350px) {
                     font-size: 20px;
                 }
             }
-            &_big{
+
+            &_big {
                 font-size: 50px;
                 text-align: center;
-                @media(max-width: 1350px){
+
+                @media(max-width: 1350px) {
                     font-size: 30px;
                 }
             }

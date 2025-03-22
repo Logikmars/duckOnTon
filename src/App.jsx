@@ -15,14 +15,9 @@ function App() {
         {/* <Hero /> */}
         <About />
         <CA />
-        <Decor />
-        
-
-        
       </div>
-      <div className="allcontainer">
-        <Footer />
-      </div>
+      <Decor />
+      <Footer />
       <ToastContainer />
     </>
   )

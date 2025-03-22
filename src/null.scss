@@ -158,7 +158,7 @@ body {
     justify-content: center;
     overflow: hidden;
 
-    
+
 }
 
 
@@ -166,7 +166,7 @@ img {
     user-select: none;
 }
 
-.allcontainer{
+.allcontainer {
     width: 100%;
     max-width: 1600px;
     display: flex;
@@ -175,36 +175,38 @@ img {
     flex-wrap: wrap;
     margin: 0 auto;
     gap: 50px;
-    @media(max-width: 1000px){
+
+    @media(max-width: 1000px) {
         gap: 25px;
     }
 }
 
-.componentContainer{
+.componentContainer {
     width: 100%;
     padding: 0px 88px;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media(max-width: 1000px){
+
+    @media(max-width: 1000px) {
         padding: 0px 10px;
     }
 }
 
-.obrazec{
+.obrazec {
     font-family: 'Obrazec';
 }
 
-.finlandica{
+.finlandica {
     font-family: 'Finlandica';
 }
 
-.outfit{
+.outfit {
     font-family: 'Outfit';
 }
 
 
 
-.textShadow{
+.textShadow {
     text-shadow: 3.00px 0.00px #000000, 2.77px 1.15px #000000, 2.12px 2.12px #000000, 1.15px 2.77px #000000, 0.00px 3.00px #000000, -1.15px 2.77px #000000, -2.12px 2.12px #000000, -2.77px 1.15px #000000, -3.00px 0.00px #000000, -2.77px -1.15px #000000, -2.12px -2.12px #000000, -1.15px -2.77px #000000, -0.00px -3.00px #000000, 1.15px -2.77px #000000, 2.12px -2.12px #000000, 2.77px -1.15px #000000, 3.00px 7.00px #000000, 2.77px 8.15px #000000, 2.12px 9.12px #000000, 1.15px 9.77px #000000, 0.00px 10.00px #000000, -1.15px 9.77px #000000, -2.12px 9.12px #000000, -2.77px 8.15px #000000, -3.00px 7.00px #000000, -2.77px 5.85px #000000, -2.12px 4.88px #000000, -1.15px 4.23px #000000, -0.00px 4.00px #000000, 1.15px 4.23px #000000, 2.12px 4.88px #000000, 2.77px 5.85px #000000;
 }
