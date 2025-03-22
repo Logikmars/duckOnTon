@@ -16,8 +16,10 @@ function App() {
         <Header />
         {/* <Hero /> */}
         <About />
-        <HowToBuy />
-        <CA />
+      </div>
+      <HowToBuy />
+      <CA />
+      <div className="allcontainer">
         <BornOn />
       </div>
       <Decor />

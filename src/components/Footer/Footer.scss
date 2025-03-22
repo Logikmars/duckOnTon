@@ -7,8 +7,8 @@
     background: #022640 url('/img/footer.webp');
     background-repeat: repeat;
     border-top: 5px solid #447DA6;
-    padding: 50px 20px 100px 20px;
-    gap: 40px;
+    padding: 32px 0px;
+    gap: 32px;
 
 
     animation: footerBg 500s infinite linear;
@@ -50,6 +50,9 @@
         &_item {
             width: calc(33% - 20px);
             font-weight: 700;
+            text-shadow: 1.00px 0.00px #000, 0.92px 0.38px #000, 0.71px 0.71px #000, 0.38px 0.92px #000, 0.00px 1.00px #000, -0.38px 0.92px #000, -0.71px 0.71px #000, -0.92px 0.38px #000,
+                -1.00px 0.00px #000, -0.92px -0.38px #000, -0.71px -0.71px #000, -0.38px -0.92px #000, -0.00px -1.00px #000, 0.38px -0.92px #000, 0.71px -0.71px #000, 0.92px -0.38px #000, 3.00px 2.00px #000, 2.92px 2.38px #000, 2.71px 2.71px #000, 2.38px 2.92px #000, 2.00px 3.00px #000, 1.62px 2.92px #000, 1.29px 2.71px #000, 1.08px 2.38px #000, 1.00px 2.00px #000,
+                1.08px 1.62px #000, 1.29px 1.29px #000, 1.62px 1.08px #000, 2.00px 1.00px #000, 2.38px 1.08px #000, 2.71px 1.29px #000, 2.92px 1.62px #000;
 
             @media(max-width: 830px) {
                 width: 100%;

@@ -24,28 +24,28 @@ export default () => {
     };
 
     return (
-        // <div className='componentContainer'>
-        <div className='CA'>
-            <div className='CA__top'>
-                <p className='CA__top_title obrazec'>CA:</p>
-                <div className='CA__top_container'>
-                    <p className='CA__top_ca finlandica'>{contractAddress}</p>
-                    <p
-                        className='CA__top_clipboard finlandica'
-                        onClick={copyToClipboard}
-                    >
-                        COPY TO CLIPBOARD
-                    </p>
+        <div className='CA_wrapper'>
+            <div className='CA'>
+                <div className='CA__top'>
+                    <p className='CA__top_title obrazec'>CA:</p>
+                    <div className='CA__top_container'>
+                        <p className='CA__top_ca finlandica'>{contractAddress}</p>
+                        <p
+                            className='CA__top_clipboard finlandica'
+                            onClick={copyToClipboard}
+                        >
+                            COPY TO CLIPBOARD
+                        </p>
+                    </div>
+                </div>
+                <div className='CA__bottom'>
+                    {items.map((el, index) => (
+                        <div key={index} className='CA__bottom_item outfit'>
+                            {el.text}
+                        </div>
+                    ))}
                 </div>
             </div>
-            <div className='CA__bottom'>
-                {items.map((el, index) => (
-                    <div key={index} className='CA__bottom_item outfit'>
-                        {el.text}
-                    </div>
-                ))}
-            </div>
         </div>
-        // </div>
     );
 };

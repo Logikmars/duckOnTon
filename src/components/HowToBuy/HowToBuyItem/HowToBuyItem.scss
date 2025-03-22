@@ -5,6 +5,14 @@
     flex-wrap: wrap;
     gap: 60px;
 
+    @media(max-width: 600px) {
+        min-width: 400px;
+    }
+
+    @media(max-width: 500px) {
+        min-width: 300px;
+    }
+
     &_wrapper {
         align-items: start !important;
         transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
@@ -31,12 +39,21 @@
             width: 550px;
             position: relative;
             left: 50px;
+
+            @media(max-width: 550px) {
+                left: 0px;
+            }
         }
 
         &_3 {
             width: 550px;
             position: relative;
             left: 50px;
+
+            @media(max-width: 550px) {
+                left: 0px;
+            }
+
         }
 
         &_4 {
@@ -52,8 +69,15 @@
             width: 500px;
             height: 500px;
 
+            @media(max-width: 550px) {
+                height: 100vw;
+            }
+
             img {
                 pointer-events: none;
+                max-width: 110vw;
+                max-height: 120vw;
+                object-fit: contain;
             }
         }
 
@@ -75,21 +99,33 @@
             right: 20px;
         }
 
+        @media(max-width: 500px) {
+            right: 0px;
+        }
+
         &_text {
             padding: 0px 30px;
             background-color: #25A3E1;
             border-radius: 20px;
             border: 2px solid #000;
-            border-bottom: 10px solid #000;
             font-weight: 800;
             min-width: 110px;
-            min-height: 120px;
+            min-height: 110px;
+            padding-bottom: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
 
+            text-shadow: 3.00px 0.00px #000, 2.77px 1.15px #000, 2.12px 2.12px #000, 1.15px 2.77px #000, 0.00px 3.00px #000, -1.15px 2.77px #000, -2.12px 2.12px #000, -2.77px 1.15px #000,
+                -3.00px 0.00px #000, -2.77px -1.15px #000, -2.12px -2.12px #000, -1.15px -2.77px #000, -0.00px -3.00px #000, 1.15px -2.77px #000, 2.12px -2.12px #000, 2.77px -1.15px #000, 3.00px 4.00px #000, 2.77px 5.15px #000, 2.12px 6.12px #000, 1.15px 6.77px #000, 0.00px 7.00px #000, -1.15px 6.77px #000, -2.12px 6.12px #000, -2.77px 5.15px #000, -3.00px 4.00px #000, -2.77px 2.85px #000, -2.12px 1.88px #000, -1.15px 1.23px #000, -0.00px 1.00px #000,
+                1.15px 1.23px #000, 2.12px 1.88px #000, 2.77px 2.85px #000;
+
             @media(max-width: 1200px) {
-                padding: 5px 15px;
+                min-width: 70px;
+                min-height: 70px;
+                max-width: 70px;
+                max-height: 70px;
+                padding-bottom: 5px;
             }
         }
     }
@@ -122,6 +158,7 @@
             }
 
             a {
+                font-family: 'Finlandica';
                 text-decoration: underline;
             }
         }

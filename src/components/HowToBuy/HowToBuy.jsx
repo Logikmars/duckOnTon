@@ -43,7 +43,7 @@ export default () => {
     // asdasd
 
     return (
-        <div className='componentContainer'>
+        <div className='HowToBuy_wrapper'>
             <div className='HowToBuy'>
                 <p className='HowToBuy__title obrazec textShadow' onClick={() => {
                     setcurrentSlide(prev => (prev + 1) < 5 ? prev + 1 : 1)

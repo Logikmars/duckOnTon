@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 45px;
 
     &__title {
         width: 100%;
@@ -15,6 +14,7 @@
 
         @media(max-width: 830px) {
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         &_line {
@@ -27,16 +27,11 @@
 
             @media(max-width: 830px) {
                 min-width: 300px;
+                height: 10px;
+                border: 2px solid #000;
+                box-shadow: 1px 1px #000;
             }
 
-            @media(max-width: 440px) {
-                min-width: 250px;
-                height: 5px;
-            }
-
-            @media(max-width: 350px) {
-                min-width: 200px;
-            }
         }
     }
 
@@ -49,23 +44,18 @@
         }
 
         @media(max-width: 1100px) {
+            letter-spacing: -5px !important;
             font-size: 70px;
         }
 
         @media(max-width: 830px) {
             width: 100%;
             text-align: center;
-            letter-spacing: 5px !important;
-        }
-
-        @media(max-width: 440px) {
+            letter-spacing: -3px !important;
             font-size: 50px;
             text-shadow: 2.00px 0.00px #000, 1.85px 0.77px #000, 1.41px 1.41px #000, 0.77px 1.85px #000, 0.00px 2.00px #000, -0.77px 1.85px #000, -1.41px 1.41px #000, -1.85px 0.77px #000, -2.00px 0.00px #000, -1.85px -0.77px #000, -1.41px -1.41px #000, -0.77px -1.85px #000, -0.00px -2.00px #000, 0.77px -1.85px #000, 1.41px -1.41px #000, 1.85px -0.77px #000, 3.00px 3.00px #000, 2.85px 3.77px #000, 2.41px 4.41px #000, 1.77px 4.85px #000, 1.00px 5.00px #000, 0.23px 4.85px #000, -0.41px 4.41px #000, -0.85px 3.77px #000, -1.00px 3.00px #000, -0.85px 2.23px #000, -0.41px 1.59px #000, 0.23px 1.15px #000, 1.00px 1.00px #000, 1.77px 1.15px #000, 2.41px 1.59px #000, 2.85px 2.23px #000 !important;
         }
 
-        @media(max-width: 350px) {
-            font-size: 40px;
-        }
 
         // width: calc(35% - 20px);
     }
