@@ -4,7 +4,7 @@ export default () => {
         <div className='Header'>
             <div className='Header__logo'>
                 <img src="/img/logo.webp" alt="" className='Header__logo_img' />
-                <p className='Header__logo_title obrazec Header__el'>DUCK on ton</p>
+                <a className='Header__logo_title obrazec Header__el'>DUCK on ton</a>
             </div>
             <div className='Header__nav'>
                 <a href='#' className='Header__nav_item obrazec Header__el'>About</a>

@@ -30,9 +30,14 @@
         align-items: center;
         gap: 20px;
 
+        a {
+            cursor: url('/img/pointer.png'), pointer;
+        }
+
         img {
+            cursor: url('/img/pointer.png'), pointer;
             width: 89px;
-            cursor: pointer;
+            // cursor: pointer;
         }
     }
 

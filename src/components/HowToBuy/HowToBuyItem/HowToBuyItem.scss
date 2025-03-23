@@ -74,11 +74,13 @@
             }
 
             img {
-                pointer-events: none;
                 max-width: 110vw;
                 max-height: 120vw;
                 object-fit: contain;
                 border-radius: 24px;
+
+                pointer-events: none;
+
             }
         }
 

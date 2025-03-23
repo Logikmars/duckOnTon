@@ -30,12 +30,12 @@ export default () => {
                     <p className='CA__top_title obrazec'>CA:</p>
                     <div className='CA__top_container'>
                         <p className='CA__top_ca finlandica'>{contractAddress}</p>
-                        <p
+                        <a
                             className='CA__top_clipboard finlandica'
                             onClick={copyToClipboard}
                         >
                             COPY TO CLIPBOARD
-                        </p>
+                        </a>
                     </div>
                 </div>
                 <div className='CA__bottom'>

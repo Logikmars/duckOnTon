@@ -18,6 +18,11 @@ const paperItems = [
             <span className='PaperItem_header_xxl PaperItem_start_meet'>
                 NICE TO MEET YOU.
             </span>
+            <div className='PaperItem_ctoblinker free_img'>
+                <div className='finlandica PaperItem_ctoblinker_inner'>
+                    CLICK TO OPEN
+                </div>
+            </div>
             <img src="/img/clickToOpen.webp" alt="" />
         </div>,
     },

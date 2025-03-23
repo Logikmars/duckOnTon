@@ -13,6 +13,12 @@
     transform-style: preserve-3d;
     overflow: hidden;
     box-shadow: 0px 4px #9C9C9C;
+    cursor: url('/img/pointer.png'), pointer;
+
+    div,
+    span {
+        cursor: url('/img/pointer.png'), pointer;
+    }
 
 
     &_textWrapper {
@@ -25,6 +31,7 @@
         position: relative;
         left: -25px;
         top: -25px;
+        pointer-events: none;
     }
 
     &_header {
@@ -125,6 +132,30 @@
 
         &_8 {
             height: 60px;
+        }
+    }
+
+    &_ctoblinker {
+        width: 100% !important;
+        top: 180px;
+        z-index: 9;
+
+        &_inner {
+            text-align: center;
+            white-space: nowrap;
+            font-size: 90px;
+            text-shadow: 0px 0px 10px #000;
+            animation: blinker .4s infinite ease-in-out alternate;
+
+            @keyframes blinker {
+                0% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: .3;
+                }
+            }
         }
     }
 
