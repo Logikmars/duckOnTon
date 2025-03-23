@@ -8,6 +8,17 @@ import { ToastContainer } from 'react-toastify';
 import HowToBuy from "./components/HowToBuy/HowToBuy";
 import BornOn from "./components/BornOn/BornOn";
 
+
+
+import { TextPlugin } from "gsap/TextPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(ScrollTrigger);
+
+
 function App() {
 
   return (

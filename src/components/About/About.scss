@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    perspective: 1500px;
 
     &__title {
         width: 100%;
@@ -60,7 +61,6 @@
         // width: calc(35% - 20px);
     }
 
-    perspective: 1500px;
 
     &__paper {
         width: 100%;
@@ -104,6 +104,26 @@
 
         &_center {
             translate: -300px 0px;
+
+            @media(max-width: 1400px) {
+                translate: (-300px * .8) 0px;
+            }
+
+            @media(max-width: 1000px) {
+                translate: (-300px * .6) 0px;
+            }
+
+            @media(max-width: 800px) {
+                translate: (-300px * .5) 0px;
+            }
+
+            @media(max-width: 600px) {
+                translate: (-300px * .4) 0px;
+            }
+
+            @media(max-width: 500px) {
+                translate: (-300px * .3) 0px;
+            }
         }
     }
 

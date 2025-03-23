@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import './HowToBuy.scss';
 import HowToBuyItem from './HowToBuyItem/HowToBuyItem';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 export default () => {
 
     const HowToBuyItems = [
@@ -39,25 +41,50 @@ export default () => {
 
     const [currentSlide, setcurrentSlide] = useState(1);
 
-    // uasdasdasdasd
-    // asdasd
+
+    const scope = useRef(null);
+    useGSAP(() => {
+        gsap.to('.HowToBuy', {
+            y: '10px',
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.HowToBuy_wrapper',
+                scrub: .01,
+                markers: true,
+                pin: '.HowToBuy_wrapper',
+                pinSpacing: false,
+                start: 'top 5%',
+                end: 'bottom 95%',
+                onUpdate: self => {
+                    const percent = Math.round(self.progress * 100);
+                    console.log('Progress:', percent + '%');
+                    setcurrentSlide(Math.max(Math.ceil(percent / (100 / 4)), 1))
+                }
+            }
+        })
+    }, { scope: scope })
+
+
+
 
     return (
-        <div className='HowToBuy_wrapper'>
-            <div className='HowToBuy'>
-                <p className='HowToBuy__title obrazec textShadow' onClick={() => {
-                    setcurrentSlide(prev => (prev + 1) < 5 ? prev + 1 : 1)
-                }}>HOW TO BUY</p>
-                <div className='HowToBuy__wrapper'>
-                    {HowToBuyItems.map((el, index) => (
-                        <HowToBuyItem
-                            img={el.img}
-                            index={index + 1}
-                            title={el.title}
-                            description={el.description}
-                            currentSlide={currentSlide}
-                        />
-                    ))}
+        <div className='HowToBuy_w' ref={scope}>
+            <div className='HowToBuy_wrapper'>
+                <div className='HowToBuy'>
+                    <p className='HowToBuy__title obrazec textShadow' onClick={() => {
+                        setcurrentSlide(prev => (prev + 1) < 5 ? prev + 1 : 1)
+                    }}>HOW TO BUY</p>
+                    <div className='HowToBuy__wrapper'>
+                        {HowToBuyItems.map((el, index) => (
+                            <HowToBuyItem
+                                img={el.img}
+                                index={index + 1}
+                                title={el.title}
+                                description={el.description}
+                                currentSlide={currentSlide}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

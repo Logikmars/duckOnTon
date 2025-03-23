@@ -15,6 +15,7 @@
     box-shadow: 0px 4px 4px #0004;
 
 
+
     @media(max-width: 1400px) {
         border-left: none;
         border-right: none;
@@ -38,9 +39,11 @@
     }
 
     &_wrapper {
-        max-width: 1400px;
+        // max-width: 1400px;
         margin: 0 auto;
         margin-top: 32px;
+        min-height: calc(300vh);
+
     }
 
     &__title {
