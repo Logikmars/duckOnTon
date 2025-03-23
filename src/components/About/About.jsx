@@ -154,7 +154,7 @@ const paperItems = [
 
 export default () => {
 
-    const [currentPage, setcurrentPage] = useState(6);
+    const [currentPage, setcurrentPage] = useState(0);
 
     return (
         <div className='componentContainer'>
