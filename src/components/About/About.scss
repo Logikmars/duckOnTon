@@ -73,6 +73,7 @@
         transform: rotate3d(1, 0, 0, 20deg);
         perspective: 5000px;
         transition: translate 1000ms;
+        scale: .8;
 
         @media(max-width: 1400px) {
             scale: .8;

@@ -28,8 +28,9 @@
     align-items: flex-end;
     animation: sea 100s infinite linear;
 
-    @media(max-width: 800px) {
+    overflow: hidden;
 
+    @media(max-width: 800px) {
         height: 300px;
         background-size: 600px 300px;
     }

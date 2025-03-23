@@ -25,14 +25,10 @@ export default () => {
             img: "/img/htb4.webp",
             title: "HOW TO BRIDGE TO TON?",
             description: <>
-                Bridge from any network to TON:
-                <br />
-                <a href="https://bridge.ton.org">Bridge TON</a>
-                <br />
-                <a href="https://www.rocketx.exchange">RocketX</a>
-                <br />
-                <a href="https://changenow.io">ChangeNOW</a>
-                <br />
+                Bridge from any network to TON:&nbsp;
+                <a href="https://bridge.ton.org">Bridge,</a>&nbsp;
+                <a href="https://www.rocketx.exchange">RocketX,</a>&nbsp;
+                <a href="https://changenow.io">ChangeNOW,</a>&nbsp;
                 or via a CEX that supports TON withdrawals
             </>
         },
@@ -45,19 +41,19 @@ export default () => {
     const scope = useRef(null);
     useGSAP(() => {
         gsap.to('.HowToBuy', {
-            y: '10px',
+            y: '0px',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.HowToBuy_wrapper',
-                scrub: .01,
-                markers: true,
+                scrub: 0,
+                // markers: true,
                 pin: '.HowToBuy_wrapper',
                 pinSpacing: false,
-                start: 'top 5%',
-                end: 'bottom 95%',
+                start: 'top 0%',
+                end: 'bottom 100%',
                 onUpdate: self => {
                     const percent = Math.round(self.progress * 100);
-                    console.log('Progress:', percent + '%');
+                    // console.log('Progress:', percent + '%');
                     setcurrentSlide(Math.max(Math.ceil(percent / (100 / 4)), 1))
                 }
             }
@@ -71,9 +67,9 @@ export default () => {
         <div className='HowToBuy_w' ref={scope}>
             <div className='HowToBuy_wrapper'>
                 <div className='HowToBuy'>
-                    <p className='HowToBuy__title obrazec textShadow' onClick={() => {
-                        setcurrentSlide(prev => (prev + 1) < 5 ? prev + 1 : 1)
-                    }}>HOW TO BUY</p>
+                    <p className='HowToBuy__title obrazec textShadow'>
+                        HOW TO BUY
+                    </p>
                     <div className='HowToBuy__wrapper'>
                         {HowToBuyItems.map((el, index) => (
                             <HowToBuyItem

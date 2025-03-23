@@ -8,11 +8,11 @@ export default ({ img, index, title, description, currentSlide }) => {
         }}>
             <div className='HowToBuyItem'>
                 <div className='HowToBuyItem__img'>
-                    <div className='HowToBuyItem__img_wrapper'>
-                        <img src={img} alt="" className={`HowToBuyItem__img_${index}`} />
-                    </div>
                     <div className='HowToBuyItem__index free_img'>
                         <p className='HowToBuyItem__index_text outfit'>{index}</p>
+                    </div>
+                    <div className='HowToBuyItem__img_wrapper'>
+                        <img src={img} alt="" className={`HowToBuyItem__img_${index}`} />
                     </div>
                 </div>
                 <div className='HowToBuyItem__description'>

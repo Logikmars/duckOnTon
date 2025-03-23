@@ -2,8 +2,14 @@
     min-width: 500px;
     min-height: 700px;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 60px;
+    justify-content: center;
+
+    @media(max-width: 1000px) {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 
     @media(max-width: 600px) {
         min-width: 400px;
@@ -28,8 +34,10 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: end;
         flex-wrap: wrap;
+
+        align-items: center;
+        align-content: center;
 
         &_1 {
             width: 650px;
@@ -38,21 +46,13 @@
         &_2 {
             width: 550px;
             position: relative;
-            left: 50px;
 
-            @media(max-width: 550px) {
-                left: 0px;
-            }
         }
 
         &_3 {
             width: 550px;
             position: relative;
-            left: 50px;
 
-            @media(max-width: 550px) {
-                left: 0px;
-            }
 
         }
 
@@ -78,6 +78,7 @@
                 max-width: 110vw;
                 max-height: 120vw;
                 object-fit: contain;
+                border-radius: 24px;
             }
         }
 
@@ -87,9 +88,11 @@
     &__index {
         width: 100% !important;
         font-size: 80px;
+        height: 0px;
         display: flex;
         justify-content: start !important;
         right: 50px;
+        z-index: 9;
 
         @media(max-width: 1200px) {
             font-size: 50px;
@@ -100,7 +103,8 @@
         }
 
         @media(max-width: 500px) {
-            right: 0px;
+            right: 30px;
+            top: 50px;
         }
 
         &_text {
@@ -132,8 +136,15 @@
 
     &__description {
         width: 100%;
+        min-width: 400px;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+
+        @media(max-width: 1000px) {
+            align-content: start;
+        }
 
         &_title {
             font-weight: 800;
@@ -159,7 +170,8 @@
 
             a {
                 font-family: 'Finlandica';
-                text-decoration: underline;
+                // text-decoration: underline;
+                border-bottom: 2px solid #25A3E1;
             }
         }
     }
