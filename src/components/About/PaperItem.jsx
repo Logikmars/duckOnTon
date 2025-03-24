@@ -14,12 +14,12 @@ export default ({ el, index, page, setPage, pagesCount, paperItems }) => {
     return (
         <div className='PaperItem_wrapper free_img' style={{
             justifyContent: `${isOdd ? 'left' : 'right'}`,
-            transform: `rotate3d(0, -1, 0, ${isOdd
+            transform: `rotate3d(0, -1, 0, ${(isOdd
                 ? index >= page
                     ? 0 : 180
                 : index >= page
                     ? -180 : 0
-                }deg)`,
+            )}deg)`,
 
             zIndex: `${zind}`
 
@@ -32,6 +32,9 @@ export default ({ el, index, page, setPage, pagesCount, paperItems }) => {
         }}
 
         >
+            {/* <div className='PaperItem' style={{
+                transform: `translate(0px, ${zind * 3 * -1}px)`
+            }}> */}
             <div className='PaperItem'>
                 {el.start && <div className='PaperItem_textWrapper'>{el.start}</div>}
                 {el.text ? <div className='PaperItem_textWrapper'>

@@ -165,9 +165,26 @@ export default () => {
         <div className='componentContainer'>
             <div className='About'>
                 <div className='About__title'>
-                    <p className='About__title_left About__el obrazec textShadow'>ABOUT</p>
+                    <p className='About__title_left About__el obrazec textShadow memeText'>
+                        {
+                            'ABOUT'.split('').map((letter) => {
+                                return <span className='obrazecNoLS' style={{
+                                    display: `${letter === ' ' ? 'inline' : 'inline-block'}`
+                                }}>{letter}</span>
+                            })
+                        }
+                    </p>
                     <div className='About__title_line'></div>
-                    <p className='About__title_right About__el obrazec textShadow'>DON ON TON</p>
+                    <p className='About__title_right About__el obrazec textShadow memeText'>
+                        {
+                            'DON ON TON'.split('').map((letter) => {
+                                return <span className='obrazecNoLS' style={{
+                                    display: `${letter === ' ' ? 'inline' : 'inline-block'}`
+                                }}>{letter}</span>
+                            })
+                        }
+
+                    </p>
                 </div>
                 <div className={`About__paper ${currentPage === 0 && 'About__paper_center'}`} >
                     {

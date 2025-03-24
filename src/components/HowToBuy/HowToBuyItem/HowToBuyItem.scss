@@ -20,7 +20,7 @@
     }
 
     &_wrapper {
-        align-items: start !important;
+        // align-items: start !important;
         transition: transform 500ms ease-in-out, opacity 500ms ease-in-out, filter 500ms ease-in-out;
     }
 
@@ -70,11 +70,11 @@
             height: 500px;
 
             @media(max-width: 550px) {
-                height: 100vw;
+                height: 60vw;
             }
 
             img {
-                max-width: 110vw;
+                max-width: 80vw;
                 max-height: 120vw;
                 object-fit: contain;
                 border-radius: 24px;
@@ -146,6 +146,7 @@
 
         @media(max-width: 1000px) {
             align-content: start;
+            padding: 0px 24px;
         }
 
         &_title {

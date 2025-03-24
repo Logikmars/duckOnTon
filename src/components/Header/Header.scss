@@ -1,9 +1,19 @@
 .Header {
     width: 100%;
-    padding: 8px 16px;
+    padding: 8px 24px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    top: 0px;
+    height: 100px;
+
+    @media(max-width: 720px) {
+        padding: 0px 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        // gap: 12px;
+        gap: 0px;
+    }
 
     &__logo {
         width: calc(50% - 20px);
@@ -16,6 +26,11 @@
 
         @media(max-width: 1400px) {
             width: fit-content;
+        }
+
+        @media(max-width: 720px) {
+            width: 100%;
+            justify-content: center;
         }
 
         &_img {
@@ -33,7 +48,7 @@
 
     &__nav {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
         column-gap: 32px;
     }
@@ -41,8 +56,7 @@
     &__el {
         text-transform: uppercase;
         font-size: 75px;
-        // cursor: pointer;
-        transition: color 300ms;
+
 
 
         text-shadow: 3.00px 0.00px #000,
@@ -86,15 +100,12 @@
         }
 
         @media(max-width: 700px) {
-            font-size: 20px;
+            font-size: 30px;
             text-shadow: 0.80px 0.00px #000, 0.74px 0.31px #000, 0.57px 0.57px #000, 0.31px 0.74px #000, 0.00px 0.80px #000, -0.31px 0.74px #000, -0.57px 0.57px #000, -0.74px 0.31px #000,
                 -0.80px 0.00px #000, -0.74px -0.31px #000, -0.57px -0.57px #000, -0.31px -0.74px #000, -0.00px -0.80px #000, 0.31px -0.74px #000, 0.57px -0.57px #000, 0.74px -0.31px #000, 1.80px 1.00px #000, 1.74px 1.31px #000, 1.57px 1.57px #000, 1.31px 1.74px #000, 1.00px 1.80px #000, 0.69px 1.74px #000, 0.43px 1.57px #000, 0.26px 1.31px #000, 0.20px 1.00px #000,
                 0.26px 0.69px #000, 0.43px 0.43px #000, 0.69px 0.26px #000, 1.00px 0.20px #000, 1.31px 0.26px #000, 1.57px 0.43px #000, 1.74px 0.69px #000;
             letter-spacing: -1px !important;
         }
 
-        &:hover {
-            color: #84D2FB;
-        }
     }
 }

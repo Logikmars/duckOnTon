@@ -25,7 +25,9 @@ function App() {
     <>
       <div className="allcontainer">
         <Header />
-        {/* <Hero /> */}
+      </div>
+      <Hero />
+      <div className="allcontainer">
         <About />
       </div>
       <HowToBuy />

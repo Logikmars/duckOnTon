@@ -67,8 +67,14 @@ export default () => {
         <div className='HowToBuy_w' ref={scope}>
             <div className='HowToBuy_wrapper'>
                 <div className='HowToBuy'>
-                    <p className='HowToBuy__title obrazec textShadow'>
-                        HOW TO BUY
+                    <p className='HowToBuy__title obrazec textShadow memeText'>
+                        {
+                            'HOW TO BUY'.split('').map((letter) => {
+                                return <span className='obrazecNoLS' style={{
+                                    display: `${letter === ' ' ? 'inline' : 'inline-block'}`
+                                }}>{letter}</span>
+                            })
+                        }
                     </p>
                     <div className='HowToBuy__wrapper'>
                         {HowToBuyItems.map((el, index) => (

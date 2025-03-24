@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './CA.scss';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 export default () => {
 
@@ -23,8 +25,27 @@ export default () => {
         }
     };
 
+    const scope = useRef(null);
+    useGSAP(() => {
+        gsap.fromTo('.CA', {
+            y: '100px',
+            opacity: 0
+        }, {
+            y: '0px',
+            opacity: 1,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.CA',
+                scrub: 1,
+                // markers: true,
+                start: 'top 70%',
+                end: 'top 70%',
+            }
+        })
+    }, { scope: scope })
+
     return (
-        <div className='CA_wrapper'>
+        <div className='CA_wrapper' ref={scope}>
             <div className='CA'>
                 <div className='CA__top'>
                     <p className='CA__top_title obrazec'>CA:</p>

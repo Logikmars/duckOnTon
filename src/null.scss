@@ -200,6 +200,10 @@ img {
     letter-spacing: -3px;
 }
 
+.obrazecNoLS {
+    font-family: 'Obrazec';
+}
+
 .finlandica {
     font-family: 'Finlandica';
     letter-spacing: 0px;
@@ -215,7 +219,19 @@ img {
     letter-spacing: -1px;
 }
 
+.memeText {
+    span {
+        transition: transform 100ms;
+        transform: rotate(0deg);
 
+        cursor: url('/img/pointer.png'), pointer;
+
+        &:hover {
+            transform: rotate(5deg) scale(1.1);
+            // z-index: 10;
+        }
+    }
+}
 
 .textShadow {
     text-shadow: 3.00px 0.00px #000000, 2.77px 1.15px #000000, 2.12px 2.12px #000000, 1.15px 2.77px #000000, 0.00px 3.00px #000000, -1.15px 2.77px #000000, -2.12px 2.12px #000000, -2.77px 1.15px #000000, -3.00px 0.00px #000000, -2.77px -1.15px #000000, -2.12px -2.12px #000000, -1.15px -2.77px #000000, -0.00px -3.00px #000000, 1.15px -2.77px #000000, 2.12px -2.12px #000000, 2.77px -1.15px #000000, 3.00px 7.00px #000000, 2.77px 8.15px #000000, 2.12px 9.12px #000000, 1.15px 9.77px #000000, 0.00px 10.00px #000000, -1.15px 9.77px #000000, -2.12px 9.12px #000000, -2.77px 8.15px #000000, -3.00px 7.00px #000000, -2.77px 5.85px #000000, -2.12px 4.88px #000000, -1.15px 4.23px #000000, -0.00px 4.00px #000000, 1.15px 4.23px #000000, 2.12px 4.88px #000000, 2.77px 5.85px #000000;

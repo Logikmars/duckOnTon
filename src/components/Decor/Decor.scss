@@ -31,7 +31,7 @@
     overflow: hidden;
 
     @media(max-width: 800px) {
-        height: 300px;
+        height: 400px;
         background-size: 600px 300px;
     }
 
@@ -64,6 +64,11 @@
                 bottom: 15vw;
             }
 
+            @media(max-width: 800px) {
+                left: 30vw;
+                bottom: 25vw;
+            }
+
             &_right {
                 left: -200px;
                 bottom: 150px;
@@ -73,11 +78,21 @@
                     left: -20vw;
                     bottom: 15vw;
                 }
+
+                @media(max-width: 800px) {
+                    left: -30vw;
+                    bottom: 25vw;
+                }
             }
 
             img {
                 width: 15vw;
                 max-width: 200px;
+
+                @media(max-width: 800px) {
+                    width: 40vw;
+                    max-width: 1000px;
+                }
             }
         }
 
@@ -89,6 +104,10 @@
             img {
                 width: 90vw;
                 max-width: 1000px;
+
+                @media(max-width: 800px) {
+                    width: 150vw;
+                }
             }
         }
     }

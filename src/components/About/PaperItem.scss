@@ -1,19 +1,62 @@
+:root {
+    --scale: 1;
+}
+
+@media (max-width: 1400px) {
+    :root {
+        --scale: 0.8;
+    }
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --scale: 0.6;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        --scale: 0.5;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --scale: 0.4;
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        --scale: 0.3;
+    }
+}
+
+
 .PaperItem {
-    min-width: 600px;
-    max-width: 600px;
-    min-height: 1000px;
-    max-height: 1000px;
-    height: 1000px;
+
     background: #FFFFFF;
-    border-radius: 10px;
-    // border: 5px solid red;
+    // border: 5px * var(--scale)) solid red;
     color: black;
-    font-size: 40px;
     user-select: none;
     transform-style: preserve-3d;
     overflow: hidden;
-    box-shadow: 0px 4px #9C9C9C;
+    // box-shadow: 0px * var(--scale)) 4px * var(--scale)) #9C9C9C;
     cursor: url('/img/pointer.png'), pointer;
+    transition: transform 500ms;
+
+
+    min-width: calc(600px * var(--scale));
+    max-width: calc(600px * var(--scale));
+    min-height: calc(1000px * var(--scale));
+    max-height: calc(1000px * var(--scale));
+    height: calc(1000px * var(--scale));
+    border-radius: calc(10px * var(--scale));
+    font-size: calc(40px * var(--scale));
+
+
+
+
 
     div,
     span {
@@ -22,22 +65,23 @@
 
 
     &_textWrapper {
-        padding: 5px 16px;
+        padding: calc(5px * var(--scale)) calc(16px * var(--scale));
     }
 
     img {
-        min-width: 650px;
-        min-height: 1050px;
+        min-width: calc(650px * var(--scale));
+        min-height: calc(1050px * var(--scale));
         position: relative;
-        left: -25px;
-        top: -25px;
+        left: calc(-25px * var(--scale));
+        top: calc(-25px * var(--scale));
         pointer-events: none;
+        width: 100%;
     }
 
     &_header {
         text-align: justify;
         color: #000;
-        padding: 5px 10px;
+        padding: calc(5px * var(--scale)) calc(10px * var(--scale));
 
         .stretch-helper::after {
             content: '';
@@ -50,7 +94,7 @@
         }
 
         &_xxl {
-            font-size: 90px;
+            font-size: calc(90px * var(--scale));
             font-family: 'Obrazec';
             text-transform: uppercase;
         }
@@ -58,93 +102,93 @@
         &_line {
             width: 100%;
             background-color: #000;
-            height: 5px;
+            height: calc(5px * var(--scale));
             margin: 0 auto;
-            margin-top: 10px;
+            margin-top: calc(10px * var(--scale));
         }
 
         &_description {
             color: #000;
-            font-size: 40px;
-            padding: 5px 10px;
-            margin-top: 10px;
+            font-size: calc(40px * var(--scale));
+            padding: calc(5px * var(--scale)) calc(10px * var(--scale));
+            margin-top: calc(10px * var(--scale));
         }
 
         &__title {
             font-weight: 700;
-            font-size: 158px;
+            font-size: calc(158px * var(--scale));
         }
 
         &__title2 {
             font-weight: 700;
-            font-size: 142px;
+            font-size: calc(142px * var(--scale));
         }
 
         &__title3 {
             font-weight: 700;
-            font-size: 112px;
+            font-size: calc(112px * var(--scale));
         }
 
         &__title4 {
-            font-size: 100px;
+            font-size: calc(100px * var(--scale));
             font-weight: 700;
         }
 
         &__title5 {
-            font-size: 90px;
+            font-size: calc(90px * var(--scale));
         }
 
         &__title6 {
-            font-size: 135px;
+            font-size: calc(135px * var(--scale));
         }
 
         &__title7 {
-            font-size: 173px;
+            font-size: calc(173px * var(--scale));
         }
 
         &_1 {
-            height: 130px;
+            height: calc(130px * var(--scale));
         }
 
         &_2 {
-            height: 70px;
+            height: calc(70px * var(--scale));
         }
 
         &_3 {
-            height: 140px;
+            height: calc(140px * var(--scale));
         }
 
         &_4 {
-            height: 160px;
+            height: calc(160px * var(--scale));
         }
 
         &_5 {
-            height: 120px;
+            height: calc(120px * var(--scale));
         }
 
         &_6 {
-            height: 150px;
+            height: calc(150px * var(--scale));
         }
 
         &_7 {
-            height: 110px;
+            height: calc(110px * var(--scale));
         }
 
         &_8 {
-            height: 60px;
+            height: calc(60px * var(--scale));
         }
     }
 
     &_ctoblinker {
         width: 100% !important;
-        top: 180px;
+        top: calc(180px * var(--scale));
         z-index: 9;
 
         &_inner {
             text-align: center;
             white-space: nowrap;
-            font-size: 90px;
-            text-shadow: 0px 0px 10px #000;
+            font-size: calc(90px * var(--scale));
+            text-shadow: calc(0px * var(--scale)) calc(0px * var(--scale)) calc(10px * var(--scale)) #000;
             animation: blinker .4s infinite ease-in-out alternate;
 
             @keyframes blinker {
@@ -178,55 +222,82 @@
         }
 
         &_startTitle {
-            font-size: 470px;
+            font-size: calc(470px * var(--scale));
             text-align: justify !important;
             width: 100%;
         }
 
         &_don {
-            font-size: 255px;
+            font-size: calc(255px * var(--scale));
             text-align: justify !important;
             width: 100%;
         }
 
         &_meet {
-            font-size: 100px;
+            font-size: calc(100px * var(--scale));
             text-align: justify !important;
             width: 100%;
         }
 
         img {
-            margin-top: 50px;
-            max-width: 630px;
-            min-width: 630px;
-            max-height: 400px;
-            min-height: 320px;
+            margin-top: calc(50px * var(--scale));
+            max-width: calc(630px * var(--scale));
+            min-width: calc(630px * var(--scale));
+            max-height: calc(400px * var(--scale));
+            min-height: calc(320px * var(--scale));
         }
     }
 
     &_wrapper {
-        transition: transform 1s ease-in-out;
+        transition: transform 1s linear;
+        // scale: .8;
+
+        // @media(max-width: 1400px * var(--scale))) {
+        //     scale: .8;
+        //     height: calc(1200px * var(--scale)) * .8);
+        // }
+
+        // @media(max-width: 1000px * var(--scale))) {
+        //     scale: .6;
+        //     height: calc(1200px * var(--scale)) * .6);
+        // }
+
+        // @media(max-width: 800px * var(--scale))) {
+        //     scale: .5;
+        //     height: calc(1200px * var(--scale)) * .5);
+        // }
+
+        // @media(max-width: 600px * var(--scale))) {
+        //     scale: .4;
+        //     height: calc(1200px * var(--scale)) * .4);
+        // }
+
+
+        // @media(max-width: 500px * var(--scale))) {
+        //     scale: .3;
+        //     height: calc(1200px * var(--scale)) * .3);
+        // }
     }
 
     // &__text {
     //     width: 100%;
-    //     padding: 0px 16px;
+    //     padding: 0px * var(--scale)) 16px * var(--scale));
 
     //     &_title {
     //         color: #000;
-    //         font-size: 110px;
+    //         font-size: 110px * var(--scale));
     //         max-width: 100%;
     //     }
 
     //     &_line {
     //         width: 100%;
-    //         height: 5px;
+    //         height: 5px * var(--scale));
     //         background-color: #000;
     //     }
 
     //     &_description {
     //         color: #000;
-    //         font-size: 40px;
+    //         font-size: 40px * var(--scale));
     //         max-width: 100%;
     //     }
     // }
