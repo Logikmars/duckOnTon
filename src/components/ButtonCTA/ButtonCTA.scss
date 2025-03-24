@@ -5,14 +5,15 @@
     top: 0px;
     pointer-events: none;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: end;
+    transition: height 100ms;
 
     canvas {
         position: relative;
-        top: calc(50vh - 100px);
+        top: calc(35dvh);
         max-width: 500px;
 
         object-fit: contain;
@@ -28,7 +29,7 @@
         min-height: 70px;
         // background: #f008;
         position: relative;
-        top: -32px;
+        top: calc(35dvh + 35px);
         pointer-events: all;
 
         &:hover {
@@ -42,10 +43,11 @@
             top: 0px;
             pointer-events: none;
             width: 100vw;
-            height: 100vh;
+            height: 100dvh;
             display: flex;
             justify-content: center;
-            align-items: end;
+            align-items: center;
+            transition: height 100ms;
         }
     }
 }
