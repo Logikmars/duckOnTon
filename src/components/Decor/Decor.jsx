@@ -10,11 +10,11 @@ export default () => {
     const scope = useRef(null);
     useGSAP(() => {
         gsap.fromTo('.arrow_1', {
-            x: '-300px',
+            x: '30vw',
 
         }, {
             y: '-500px',
-            x: '-600px',
+            x: '10vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -26,10 +26,10 @@ export default () => {
             }
         })
         gsap.fromTo('.arrow_2', {
-            x: '-150px',
+            x: '0vw',
         }, {
             y: '-500px',
-            x: '-250px',
+            x: '10vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -41,10 +41,10 @@ export default () => {
         })
 
         gsap.fromTo('.arrow_3', {
-            x: '-200px',
+            x: '-10vw',
         }, {
             y: '-400px',
-            x: '-400px',
+            x: '-15vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -58,10 +58,10 @@ export default () => {
 
 
         gsap.fromTo('.arrow_4', {
-            x: '100px',
+            x: '-5vw',
         }, {
             y: '-600px',
-            x: '0px',
+            x: '0vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -74,10 +74,10 @@ export default () => {
         })
 
         gsap.fromTo('.arrow_5', {
-            x: '350px',
+            x: '-10vw',
         }, {
             y: '-500px',
-            x: '150px',
+            x: '-30vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -89,10 +89,10 @@ export default () => {
             }
         })
         gsap.fromTo('.arrow_6', {
-            x: '-600px',
+            x: '15vw',
         }, {
             y: '-300px',
-            x: '-600px',
+            x: '25vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -104,11 +104,11 @@ export default () => {
             }
         })
         gsap.fromTo('.arrow_7', {
-            x: '500px',
+            x: '20vw',
 
         }, {
             y: '-400px',
-            x: '450px',
+            x: '30vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -120,11 +120,11 @@ export default () => {
             }
         })
         gsap.fromTo('.arrow_8', {
-            x: '600px',
+            x: '10vw',
 
         }, {
             y: '-500px',
-            x: '600px',
+            x: '20vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -136,10 +136,10 @@ export default () => {
             }
         })
         gsap.fromTo('.arrow_9', {
-            x: '400px',
+            x: '-10vw',
         }, {
             y: '-300px',
-            x: '800px',
+            x: '-20vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -151,10 +151,10 @@ export default () => {
             }
         })
         gsap.fromTo('.arrow_10', {
-            x: '100px',
+            x: '-15vw',
         }, {
             y: '-600px',
-            x: '400px',
+            x: '-30vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',

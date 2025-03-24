@@ -16,7 +16,7 @@ export default () => {
                 </a>
             </div>
             <div className='Header__nav'>
-                <a href='#' className='Header__nav_item obrazec Header__el'>
+                <a href='#ABOUT' className='Header__nav_item obrazec Header__el'>
                     {
                         'ABOUT'.split('').map((letter) => {
                             return <span className='obrazecNoLS' style={{
@@ -25,7 +25,7 @@ export default () => {
                         })
                     }
                 </a>
-                <a href='#' className='Header__nav_item obrazec Header__el'>
+                <a href='#HTB' className='Header__nav_item obrazec Header__el'>
                     {
                         'HOW TO BUY'.split('').map((letter) => {
                             return <span className='obrazecNoLS' style={{
@@ -34,7 +34,7 @@ export default () => {
                         })
                     }
                 </a>
-                <a href='#' className='Header__nav_item obrazec Header__el'>
+                <a href='#SOCIALS' className='Header__nav_item obrazec Header__el'>
                     {
                         'SOCIALS'.split('').map((letter) => {
                             return <span className='obrazecNoLS' style={{

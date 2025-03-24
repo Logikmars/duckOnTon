@@ -162,9 +162,11 @@ export default () => {
     const [currentPage, setcurrentPage] = useState(0);
 
     return (
-        <div className='componentContainer'>
+        <div className='componentContainer' id='ABOUT'>
             <div className='About'>
-                <div className='About__title'>
+                <div className='About__title' onClick={() => {
+                    setcurrentPage(prev => prev + 2)
+                }}>
                     <p className='About__title_left About__el obrazec textShadow memeText'>
                         {
                             'ABOUT'.split('').map((letter) => {
@@ -175,7 +177,7 @@ export default () => {
                         }
                     </p>
                     <div className='About__title_line'></div>
-                    <p className='About__title_right About__el obrazec textShadow memeText'>
+                    <p className='About__title_right About__el About__el_last obrazec textShadow memeText'>
                         {
                             'DON ON TON'.split('').map((letter) => {
                                 return <span className='obrazecNoLS' style={{
@@ -189,6 +191,7 @@ export default () => {
                 <div className={`About__paper ${currentPage === 0 && 'About__paper_center'}`} >
                     {
                         paperItems.map((paperEl, index) => {
+                            // if (index > 1) return
                             return <PaperItem
                                 el={paperEl}
                                 index={index}

@@ -64,7 +64,7 @@ export default () => {
 
 
     return (
-        <div className='HowToBuy_w' ref={scope}>
+        <div className='HowToBuy_w' id='HTB' ref={scope}>
             <div className='HowToBuy_wrapper'>
                 <div className='HowToBuy'>
                     <p className='HowToBuy__title obrazec textShadow memeText'>

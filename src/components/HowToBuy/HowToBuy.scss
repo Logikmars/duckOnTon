@@ -46,8 +46,11 @@
         // max-width: 1400px;
         margin: 0 auto;
         margin-top: 32px;
-        min-height: calc(300vh);
+        min-height: 300vh;
 
+        @media(max-width: 800px) {
+            min-height: 500dvh;
+        }
     }
 
     &__title {

@@ -116,17 +116,20 @@
 
         &__title {
             font-weight: 700;
-            font-size: calc(158px * var(--scale));
+            // font-size: calc(158px * var(--scale));
+            font-size: calc(140px * var(--scale));
         }
 
         &__title2 {
             font-weight: 700;
-            font-size: calc(142px * var(--scale));
+            // font-size: calc(142px * var(--scale));
+            font-size: calc(110px * var(--scale));
         }
 
         &__title3 {
             font-weight: 700;
-            font-size: calc(112px * var(--scale));
+            // font-size: calc(112px * var(--scale));
+            font-size: calc(92px * var(--scale));
         }
 
         &__title4 {
@@ -249,7 +252,8 @@
     }
 
     &_wrapper {
-        transition: transform 1s linear;
+        transition: transform 1s ease-in-out;
+        backface-visibility: hidden;
         // scale: .8;
 
         // @media(max-width: 1400px * var(--scale))) {

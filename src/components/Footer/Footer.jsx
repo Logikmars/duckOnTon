@@ -2,10 +2,13 @@ import './Footer.scss';
 export default () => {
     return (
         // <div className='componentContainer'>
-        <div className='Footer'>
+        <div className='Footer' id='SOCIALS'>
             <div className='Footer__social'>
                 <a>
                     <img src="/img/tg.webp" alt="" />
+                </a>
+                <a>
+                    <img src="/img/dex.webp" alt="" />
                 </a>
                 <a>
                     <img src="/img/x.webp" alt="" />
