@@ -119,37 +119,37 @@ const paperItems = [
     {
         img: '/img/duck3.webp'
     },
-    {
-        // этой страницы нет в фигме
-        header:
-            <>
-                <div className='PaperItem_header PaperItem_header_1'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title'>
-                        THE DARING
-                    </span>
-                    <span class="stretch-helper" />
-                </div>
+    // {
+    //     // этой страницы нет в фигме
+    //     header:
+    //         <>
+    //             <div className='PaperItem_header PaperItem_header_1'>
+    //                 <span className='PaperItem_header_xxl PaperItem_header__title'>
+    //                     THE DARING
+    //                 </span>
+    //                 <span class="stretch-helper" />
+    //             </div>
 
-                <div className='PaperItem_header PaperItem_header_5'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title2'>
-                        DUCK OF THE
-                    </span>
-                    <span class="stretch-helper" />
-                </div>
-                <div className='PaperItem_header PaperItem_header_1'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title3'>
-                        TON ECOSYSTEM
-                    </span>
-                    <span class="stretch-helper" />
-                </div>
+    //             <div className='PaperItem_header PaperItem_header_5'>
+    //                 <span className='PaperItem_header_xxl PaperItem_header__title2'>
+    //                     DUCK OF THE
+    //                 </span>
+    //                 <span class="stretch-helper" />
+    //             </div>
+    //             <div className='PaperItem_header PaperItem_header_1'>
+    //                 <span className='PaperItem_header_xxl PaperItem_header__title3'>
+    //                     TON ECOSYSTEM
+    //                 </span>
+    //                 <span class="stretch-helper" />
+    //             </div>
 
 
-                <div className='PaperItem_header_line'></div>
-            </>,
-        text: <div className='PaperItem_header_description CrimsonPro'>
-            TON is built for a huge audience while staying true to its core principles. This unique blend gave us ducks the perfect ground for growth. Now we’re ready to shake up Web3 together.
-        </div>
-    },
+    //             <div className='PaperItem_header_line'></div>
+    //         </>,
+    //     text: <div className='PaperItem_header_description CrimsonPro'>
+    //         TON is built for a huge audience while staying true to its core principles. This unique blend gave us ducks the perfect ground for growth. Now we’re ready to shake up Web3 together.
+    //     </div>
+    // },
     {
         img: '/img/duck4.webp'
     }
@@ -164,9 +164,7 @@ export default () => {
     return (
         <div className='componentContainer' id='ABOUT'>
             <div className='About'>
-                <div className='About__title' onClick={() => {
-                    setcurrentPage(prev => prev + 2)
-                }}>
+                <div className='About__title'>
                     <p className='About__title_left About__el obrazec textShadow memeText'>
                         {
                             'ABOUT'.split('').map((letter) => {
@@ -188,7 +186,7 @@ export default () => {
 
                     </p>
                 </div>
-                <div className={`About__paper ${currentPage === 0 && 'About__paper_center'}`} >
+                <div className={`About__paper ${currentPage === 0 && 'About__paper_center'} ${currentPage > paperItems.length - 1 && 'About__paper_center_last'}`}>
                     {
                         paperItems.map((paperEl, index) => {
                             // if (index > 1) return

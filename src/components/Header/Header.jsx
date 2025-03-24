@@ -4,7 +4,7 @@ export default () => {
         <div className='Header'>
             <div className='Header__logo'>
                 <img src="/img/logo.webp" alt="" className='Header__logo_img' />
-                <a className='Header__logo_title obrazec Header__el'>
+                <a className='Header__logo_title obrazec Header__el memeText'>
                     {/* DUCK ON TON */}
                     {
                         'DUCK ON TON'.split('').map((letter) => {
@@ -16,7 +16,7 @@ export default () => {
                 </a>
             </div>
             <div className='Header__nav'>
-                <a href='#ABOUT' className='Header__nav_item obrazec Header__el'>
+                <a href='#ABOUT' className='Header__nav_item obrazec Header__el memeText'>
                     {
                         'ABOUT'.split('').map((letter) => {
                             return <span className='obrazecNoLS' style={{
@@ -25,7 +25,7 @@ export default () => {
                         })
                     }
                 </a>
-                <a href='#HTB' className='Header__nav_item obrazec Header__el'>
+                <a href='#HTB' className='Header__nav_item obrazec Header__el memeText'>
                     {
                         'HOW TO BUY'.split('').map((letter) => {
                             return <span className='obrazecNoLS' style={{
@@ -34,7 +34,7 @@ export default () => {
                         })
                     }
                 </a>
-                <a href='#SOCIALS' className='Header__nav_item obrazec Header__el'>
+                <a href='#SOCIALS' className='Header__nav_item obrazec Header__el memeText'>
                     {
                         'SOCIALS'.split('').map((letter) => {
                             return <span className='obrazecNoLS' style={{

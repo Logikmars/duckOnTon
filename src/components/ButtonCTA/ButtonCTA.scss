@@ -1,0 +1,51 @@
+.ButtonCTA {
+    position: fixed;
+    z-index: 9999;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    canvas {
+        position: relative;
+        top: calc(50vh - 100px);
+        max-width: 500px;
+
+        object-fit: contain;
+        pointer-events: none;
+
+        @media(max-width: 600px) {
+            max-width: 300px;
+        }
+    }
+
+    &_trigger {
+        min-width: 200px;
+        min-height: 70px;
+        // background: #f008;
+        position: relative;
+        top: -32px;
+        pointer-events: all;
+
+        &:hover {
+            cursor: url('/img/pointer.png'), pointer;
+        }
+
+        &_wrapper {
+            position: fixed;
+            z-index: 99999;
+            left: 0px;
+            top: 0px;
+            pointer-events: none;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+    }
+}

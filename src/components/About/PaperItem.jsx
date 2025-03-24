@@ -26,7 +26,7 @@ export default ({ el, index, page, setPage, pagesCount, paperItems }) => {
 
         }} onClick={() => {
             if (isOdd) {
-                setPage(prev => Math.min(prev + 2, pagesCount - (pagesCount % 2 === 0 ? 2 : 1)))
+                setPage(prev => Math.min(prev + 2, pagesCount + 2 - (pagesCount % 2 === 0 ? 2 : 1)))
             } else {
                 setPage(prev => Math.max(prev - 2, 0))
             }

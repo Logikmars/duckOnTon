@@ -47,16 +47,25 @@
         }
     }
 
+    img {
+
+        user-drag: none;
+        -webkit-user-drag: none;
+        pointer-events: none;
+    }
+
     &__info {
         width: 100% !important;
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        pointer-events: none;
 
         &_table {
             animation: shake 4s infinite;
             align-items: end !important;
             left: 280px;
+
             bottom: 120px;
 
             @media(max-width: 1300px) {
@@ -104,6 +113,7 @@
             img {
                 width: 90vw;
                 max-width: 1000px;
+                pointer-events: none;
 
                 @media(max-width: 800px) {
                     width: 150vw;

@@ -9,13 +9,16 @@
 
 .Hero {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: wrap;
     position: relative;
     z-index: 99;
-    // top: -100px;
+    top: -100px;
+    transition: background-color 1000ms;
+    min-height: 100vh;
+    pointer-events: none;
 
     &_rive {
         pointer-events: none;
@@ -26,23 +29,46 @@
         height: 100vh !important;
         pointer-events: none;
         position: relative;
-        top: -100px;
+        // top: -100px;
+    }
+
+    &_turner {
+        width: 100% !important;
+        top: 54vh;
+        left: -24vh;
+        z-index: 999;
+
+        @media (max-aspect-ratio: 1/1) {
+            left: -24vw;
+            top: calc(50vh + 4vw);
+        }
+
+        &_inner {
+            // background: #f008;
+            min-width: 9vh;
+            min-height: 9vh;
+            cursor: url('/img/pointer.png'), pointer;
+
+            pointer-events: all;
+
+            @media (max-aspect-ratio: 1/1) {
+                min-width: 9vw;
+                min-height: 9vw;
+            }
+        }
     }
 
     &_tapcheck {
         z-index: 999;
         width: 100% !important;
         align-items: start !important;
-
-        @media(max-width: 650px) {
-            top: 60px;
-        }
+        top: 100px;
 
         &_inner {
             min-width: 100vw;
             height: calc(105vh - 105px);
             // background: red;
-
+            pointer-events: all;
 
             @media(max-width: 650px) {
                 height: calc(105vh - 60px);

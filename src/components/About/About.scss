@@ -85,6 +85,10 @@
 
         &_center {
             translate: calc(-300px * var(--scale)) 0px;
+
+            &_last {
+                translate: calc(300px * var(--scale)) 0px;
+            }
         }
     }
 

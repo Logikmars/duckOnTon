@@ -202,6 +202,8 @@ img {
 
 .obrazecNoLS {
     font-family: 'Obrazec';
+    cursor: url('/img/pointer.png'), pointer;
+
 }
 
 .finlandica {
@@ -219,9 +221,11 @@ img {
     letter-spacing: -1px;
 }
 
+
+
 .memeText {
     span {
-        transition: transform 100ms;
+        transition: transform 100ms, color 200ms;
         transform: rotate(0deg);
 
         cursor: url('/img/pointer.png'), pointer;

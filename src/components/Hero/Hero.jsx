@@ -3,27 +3,19 @@ import './Hero.scss';
 
 import { useRive, useStateMachineInput } from '@rive-app/react-canvas';
 import { useEffect, useState } from 'react';
+import RiveFade from './RiveFade';
+import RiveUnFade from './RiveUnFade';
 
-const STATE_MACHINE_NAME = 'State Machine 1'; // Замени на своё
-const RIVE_FILE = '/duck.riv'; // путь к твоему .riv файлу
 
 export default () => {
 
-
-    const { rive, RiveComponent } = useRive({
-        src: RIVE_FILE,
-        stateMachines: STATE_MACHINE_NAME,
-        autoplay: true,
-    });
-
-    const onInput = useStateMachineInput(rive, STATE_MACHINE_NAME, 'on');
-    const offInput = useStateMachineInput(rive, STATE_MACHINE_NAME, 'off');
-    const tapInput = useStateMachineInput(rive, STATE_MACHINE_NAME, 'tap');
-    const signInput = useStateMachineInput(rive, STATE_MACHINE_NAME, 'sign');
-    const xInput = useStateMachineInput(rive, STATE_MACHINE_NAME, 'x');
-    const yInput = useStateMachineInput(rive, STATE_MACHINE_NAME, 'y');
-
     const [lightsOn, setlightsOn] = useState(false);
+    const [ontrigger, setontrigger] = useState(0);
+    const [offtrigger, setofftrigger] = useState(0);
+    const [taptrigger, settaptrigger] = useState(0);
+
+    const [turnerTrigger, setturnerTrigger] = useState(0);
+
     const [coords, setCoords] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
@@ -37,40 +29,56 @@ export default () => {
     }, []);
 
 
-    useEffect(() => {
-        if (xInput && yInput) {
-            xInput.value = coords.x;
-            yInput.value = coords.y;
-        }
-    }, [coords, xInput, yInput]);
-
-    let interval
-
-    useEffect(() => {
-        if (lightsOn) {
-            interval = setInterval(() => {
-                signInput?.fire()
-            }, 5000);
-        }
-    }, [lightsOn])
-
 
     return (
-        <div className='Hero'>
+        <div className='Hero' style={{
+            backgroundColor: lightsOn ? '#0000' : '#000'
+        }}>
             <div className='Hero_tapcheck free_img'>
                 <div className='Hero_tapcheck_inner' onClick={() => {
                     if (!lightsOn) {
-                        onInput?.fire()
+                        // onInput?.fire()
+                        setontrigger(Math.random())
+                        // setTimeout(() => {
                         setlightsOn(true)
+                        // }, 1000);
                     } else {
-                        tapInput?.fire()
+                        // tapInput?.fire()
+                        settaptrigger(Math.random())
                         // signInput?.fire()
                     }
                 }}></div>
             </div>
-            {/* <div className='Hero_rive'> */}
-            <RiveComponent />
-            {/* </div> */}
+            <div className='Hero_turner free_img'>
+                <div className='Hero_turner_inner' onClick={() => {
+                    if (lightsOn) {
+                        setofftrigger(Math.random())
+                        setTimeout(() => {
+                            setlightsOn(false)
+                        }, 1000);
+                    } else {
+                        setontrigger(Math.random())
+                        // onInput?.fire()
+                        setlightsOn(true)
+                    }
+                }}></div>
+            </div>
+
+            <RiveUnFade
+                coords={coords}
+                ontrigger={ontrigger}
+                offtrigger={offtrigger}
+                taptrigger={taptrigger}
+                lightsOn={lightsOn}
+            />
+            <RiveFade
+                coords={coords}
+                ontrigger={ontrigger}
+                offtrigger={offtrigger}
+                taptrigger={taptrigger}
+            />
+
+
         </div>
     )
 }

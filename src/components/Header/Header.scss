@@ -107,5 +107,11 @@
             letter-spacing: -1px !important;
         }
 
+        &:hover {
+            span {
+                color: #FFD600;
+            }
+        }
+
     }
 }
