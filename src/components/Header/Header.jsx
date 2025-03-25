@@ -21,13 +21,13 @@ export default () => {
 
 
                 <div className='Header_media'>
-                    <a className='Header_media_element'>
+                    <a href='https://t.me/DonDuckPortal' target='_blank' className='Header_media_element'>
                         <img src="/img/tg.webp" alt="" />
                     </a>
                     <a className='Header_media_element'>
                         <img src="/img/dex.webp" alt="" />
                     </a>
-                    <a className='Header_media_element'>
+                    <a href='https://x.com/donduckton' target='_blank' className='Header_media_element'>
                         <img src="/img/x.webp" alt="" />
                     </a>
                 </div>

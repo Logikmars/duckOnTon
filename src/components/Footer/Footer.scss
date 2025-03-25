@@ -1,8 +1,8 @@
 .Footer {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    // flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     background: #022640 url('/img/footer.webp');
     background-repeat: repeat;
@@ -10,9 +10,11 @@
     padding: 32px 0px;
     gap: 32px;
     padding-bottom: 190px;
-
-
     animation: footerBg 500s infinite linear;
+
+    @media(max-width: 600px) {
+        flex-wrap: wrap;
+    }
 
     @keyframes footerBg {
         0% {
