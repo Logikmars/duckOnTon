@@ -24,9 +24,10 @@ function App() {
 
   return (
     <>
-      <div className="allcontainer">
+      <div className="allcontainer allcontainer_nogap ">
         <Header />
       </div>
+
       <Hero />
       <ButtonCTA />
       <div className="allcontainer">

@@ -181,6 +181,10 @@ img {
     @media(max-width: 1000px) {
         gap: 25px;
     }
+
+    &_nogap {
+        gap: 0px !important;
+    }
 }
 
 .componentContainer {

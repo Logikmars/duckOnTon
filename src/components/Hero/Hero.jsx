@@ -64,18 +64,18 @@ export default () => {
                 }}></div>
             </div>
 
+            <RiveFade
+                coords={coords}
+                ontrigger={ontrigger}
+                offtrigger={offtrigger}
+                taptrigger={taptrigger}
+            />
             <RiveUnFade
                 coords={coords}
                 ontrigger={ontrigger}
                 offtrigger={offtrigger}
                 taptrigger={taptrigger}
                 lightsOn={lightsOn}
-            />
-            <RiveFade
-                coords={coords}
-                ontrigger={ontrigger}
-                offtrigger={offtrigger}
-                taptrigger={taptrigger}
             />
 
 

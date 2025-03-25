@@ -9,7 +9,7 @@ export default () => {
         {
             img: "/img/htb1.webp",
             title: "Use DeDust or STON.fi",
-            description: "Open DeDust or STON.fi in Google Chrome  or in the browser inside Tonkeeper.Connect your wallet, enter the token name   (do not buy DUREVOLD) or paste the $DON contract address.Confirm the action — when Tonkeeper asks for a signature, sign it."
+            description: "Open DeDust or STON.fi in Google Chrome  or in the browser inside Tonkeeper.Connect your wallet, enter the token name  or paste the $DON contract address.Confirm the action — when Tonkeeper asks for a signature, sign it."
         },
         {
             img: "/img/htb2.webp",
@@ -19,7 +19,7 @@ export default () => {
         {
             img: "/img/htb3.webp",
             title: "WHERE TO BUY TON?",
-            description: "Buy TON with a card directly in Tonkeeper or TonSpace Or via exchanges: OKX, Bybit, KuCoin, EXMO, HTX, and others Also available on: Uniswap (ETH) and PancakeSwap (BSC)Full list — on CoinMarketCap"
+            description: "Buy TON with a card directly in Tonkeeper or TonSpace Or via exchanges: OKX, Bybit, KuCoin, EXMO, HTX, and others Also available on: Uniswap (ETH) and PancakeSwap (BSC)Full list — on CoinMarketCap."
         },
         {
             img: "/img/htb4.webp",
@@ -29,7 +29,7 @@ export default () => {
                 <a href="https://bridge.ton.org">Bridge,</a>&nbsp;
                 <a href="https://www.rocketx.exchange">RocketX,</a>&nbsp;
                 <a href="https://changenow.io">ChangeNOW,</a>&nbsp;
-                or via a CEX that supports TON withdrawals
+                or via a CEX that supports TON withdrawals.
             </>
         },
     ]
