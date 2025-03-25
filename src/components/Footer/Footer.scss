@@ -12,6 +12,10 @@
     padding-bottom: 190px;
     animation: footerBg 500s infinite linear;
 
+    @media(min-width: 1300px) {
+        padding-bottom: 32px;
+    }
+
     @media(max-width: 600px) {
         flex-wrap: wrap;
     }
