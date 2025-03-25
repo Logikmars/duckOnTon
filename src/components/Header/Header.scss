@@ -73,8 +73,10 @@
 
         &_element {
             width: 100%;
+            cursor: url('/img/pointer.png'), pointer;
 
             img {
+                cursor: url('/img/pointer.png'), pointer;
                 width: 86px;
 
                 @media(max-width: 720px) {
