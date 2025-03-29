@@ -64,7 +64,7 @@ const paperItems = [
             <>
                 <div className='PaperItem_header PaperItem_header_8'>
                     <span className='PaperItem_header_xxl PaperItem_header__title1'>
-                        FROM an iinocent
+                        FROM AN INNOCENT
                     </span>
                     <span class="stretch-helper" />
                 </div>
@@ -83,7 +83,7 @@ const paperItems = [
                 <div className='PaperItem_header_line'></div>
             </>,
         text: <div className='PaperItem_header_description CrimsonPro'>
-            Despite attempts to suppress us, ducks spread everywhere—stickers, memes, even shout-outs from Paul Du Rove. All these symbols merged to form me, a rebellious duckling guiding TON’s next evolution.
+            Despite attempts to suppress us, ducks spread everywhere — stickers, memes, even shout-outs from Paul Du Rove. All these symbols merged to form me, a rebellious duckling guiding TON's next evolution.
         </div>
     },
     {

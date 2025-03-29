@@ -25,12 +25,18 @@
     }
 
     &_trigger {
-        min-width: 200px;
-        min-height: 70px;
+        min-width: 320px;
+        min-height: 110px;
         // background: #f008;
         position: relative;
-        top: calc(35dvh + 35px);
+        top: calc(35dvh + 55px);
         pointer-events: all;
+
+        @media(max-width: 600px) {
+            top: calc(35dvh + 30px);
+            min-width: 200px;
+            min-height: 65px;
+        }
 
         &:hover {
             cursor: url('/img/pointer.png'), pointer;

@@ -78,6 +78,7 @@
             img {
                 cursor: url('/img/pointer.png'), pointer;
                 width: 86px;
+                transition: transform 200ms;
 
                 @media(max-width: 720px) {
                     width: 64px;
@@ -86,6 +87,14 @@
 
                 @media(max-width: 640px) {
                     width: 48px;
+                }
+            }
+
+
+
+            &:hover {
+                img {
+                    transform: rotate(5deg) scale(1.1);
                 }
             }
         }

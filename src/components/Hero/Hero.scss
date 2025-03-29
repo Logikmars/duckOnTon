@@ -15,9 +15,9 @@
     // flex-wrap: wrap;
     position: relative;
     z-index: 99;
-    top: -105px;
+    top: -100px;
     transition: background-color 1000ms;
-    min-height: 100vh;
+    min-height: calc(100vh + 100px);
     pointer-events: none;
 
     &_rive {
