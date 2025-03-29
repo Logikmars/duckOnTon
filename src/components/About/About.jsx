@@ -5,19 +5,23 @@ import PaperItem from './PaperItem';
 const paperItems = [
     {
         start: <div className='PaperItem_start'>
-            <span className='PaperItem_header_xxl PaperItem_start_startTitle'>
-                HEY!
-            </span>
-            <span class="stretch-helper" />
-            <br />
-            <span className='PaperItem_header_xxl PaperItem_start_don'>
-                I'M DON
-            </span>
-            <span class="stretch-helper" />
-            <br />
-            <span className='PaperItem_header_xxl PaperItem_start_meet'>
-                NICE TO MEET YOU.
-            </span>
+
+            <div className='PaperItem_header PaperItem_header_1_1'>
+                <span className='PaperItem_header_xxl PaperItem_header_1_1_title'>
+                    HEY!
+                </span>
+            </div>
+            <div className='PaperItem_header PaperItem_header_1_2'>
+                <span className='PaperItem_header_xxl PaperItem_header_1_2_title'>
+                    I'M<span> </span>DON
+                </span>
+            </div>
+            <div className='PaperItem_header PaperItem_header_1_3'>
+                <span className='PaperItem_header_xxl PaperItem_header_1_3_title'>
+                    NICE<span> </span>TO<span> </span>MEET<span> </span>YOU
+                </span>
+            </div>
+
             <div className='PaperItem_ctoblinker free_img'>
                 <div className='finlandica PaperItem_ctoblinker_inner'>
                     CLICK TO OPEN
@@ -29,24 +33,21 @@ const paperItems = [
     {
         header:
             <>
-                <div className='PaperItem_header PaperItem_header_1'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title'>
-                        THE DARING
+                <div className='PaperItem_header PaperItem_header_2_1'>
+                    <span className='PaperItem_header_xxl PaperItem_header_2_1_title'>
+                        THE<span> </span>DARING
                     </span>
-                    <span class="stretch-helper" />
                 </div>
 
-                <div className='PaperItem_header PaperItem_header_5'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title2'>
-                        DUCK OF THE
+                <div className='PaperItem_header PaperItem_header_2_2'>
+                    <span className='PaperItem_header_xxl PaperItem_header_2_2_title'>
+                        DUCK<span> </span>OF<span> </span>THE
                     </span>
-                    <span class="stretch-helper" />
                 </div>
-                <div className='PaperItem_header PaperItem_header_1'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title3'>
-                        TON ECOSYSTEM
+                <div className='PaperItem_header PaperItem_header_2_3'>
+                    <span className='PaperItem_header_xxl PaperItem_header_2_3_title'>
+                        TON<span> </span>ECOSYSTEM
                     </span>
-                    <span class="stretch-helper" />
                 </div>
 
 
@@ -62,23 +63,21 @@ const paperItems = [
     {
         header:
             <>
-                <div className='PaperItem_header PaperItem_header_8'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title1'>
-                        FROM AN INNOCENT
+                <div className='PaperItem_header PaperItem_header_3_1'>
+                    <span className='PaperItem_header_xxl PaperItem_header_3_1_title'>
+                        FROM<span> </span>AN<span> </span>INNOCENT
                     </span>
-                    <span class="stretch-helper" />
                 </div>
-                <div className='PaperItem_header PaperItem_header_3'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title'>
-                        STICKER to
+
+                <div className='PaperItem_header PaperItem_header_3_2'>
+                    <span className='PaperItem_header_xxl PaperItem_header_3_2_title'>
+                        STICKER<span> </span>to
                     </span>
-                    <span class="stretch-helper" />
                 </div>
-                <div className='PaperItem_header PaperItem_header_7'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title5'>
-                        A REBEL DUCKLING
+                <div className='PaperItem_header PaperItem_header_3_3'>
+                    <span className='PaperItem_header_xxl PaperItem_header_3_3_title'>
+                        A<span> </span>REBEL<span> </span>DUCKLING
                     </span>
-                    <span class="stretch-helper" />
                 </div>
                 <div className='PaperItem_header_line'></div>
             </>,
@@ -92,23 +91,21 @@ const paperItems = [
     {
         header:
             <>
-                <div className='PaperItem_header PaperItem_header_6'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title7'>
-                        SCALE and
+                <div className='PaperItem_header PaperItem_header_4_1'>
+                    <span className='PaperItem_header_xxl PaperItem_header_4_1_title'>
+                        SCALE<span> </span>AND
                     </span>
-                    <span class="stretch-helper" />
                 </div>
-                <div className='PaperItem_header PaperItem_header_7'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title6'>
+
+                <div className='PaperItem_header PaperItem_header_4_2'>
+                    <span className='PaperItem_header_xxl PaperItem_header_4_2_title'>
                         UNBREAKABLE
                     </span>
-                    <span class="stretch-helper" />
                 </div>
-                <div className='PaperItem_header PaperItem_header_4'>
-                    <span className='PaperItem_header_xxl PaperItem_header__title2'>
-                        DUCK POWER
+                <div className='PaperItem_header PaperItem_header_4_3'>
+                    <span className='PaperItem_header_xxl PaperItem_header_4_3_title'>
+                        DUCK<span> </span>POWER
                     </span>
-                    <span class="stretch-helper" />
                 </div>
                 <div className='PaperItem_header_line'></div>
             </>,
@@ -119,37 +116,6 @@ const paperItems = [
     {
         img: '/img/duck3.webp'
     },
-    // {
-    //     // этой страницы нет в фигме
-    //     header:
-    //         <>
-    //             <div className='PaperItem_header PaperItem_header_1'>
-    //                 <span className='PaperItem_header_xxl PaperItem_header__title'>
-    //                     THE DARING
-    //                 </span>
-    //                 <span class="stretch-helper" />
-    //             </div>
-
-    //             <div className='PaperItem_header PaperItem_header_5'>
-    //                 <span className='PaperItem_header_xxl PaperItem_header__title2'>
-    //                     DUCK OF THE
-    //                 </span>
-    //                 <span class="stretch-helper" />
-    //             </div>
-    //             <div className='PaperItem_header PaperItem_header_1'>
-    //                 <span className='PaperItem_header_xxl PaperItem_header__title3'>
-    //                     TON ECOSYSTEM
-    //                 </span>
-    //                 <span class="stretch-helper" />
-    //             </div>
-
-
-    //             <div className='PaperItem_header_line'></div>
-    //         </>,
-    //     text: <div className='PaperItem_header_description CrimsonPro'>
-    //         TON is built for a huge audience while staying true to its core principles. This unique blend gave us ducks the perfect ground for growth. Now we’re ready to shake up Web3 together.
-    //     </div>
-    // },
     {
         img: '/img/duck4.webp'
     }

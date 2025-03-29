@@ -81,7 +81,8 @@
     &_header {
         text-align: justify;
         color: #000;
-        padding: calc(5px * var(--scale)) calc(10px * var(--scale));
+        padding: calc(0px * var(--scale)) calc(10px * var(--scale));
+        width: 100%;
 
         .stretch-helper::after {
             content: '';
@@ -94,9 +95,14 @@
         }
 
         &_xxl {
-            font-size: calc(90px * var(--scale));
+            // font-size: calc(90px * var(--scale));
             font-family: 'Obrazec';
             text-transform: uppercase;
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: -2px !important;
         }
 
         &_line {
@@ -112,24 +118,29 @@
             font-size: calc(40px * var(--scale));
             padding: calc(5px * var(--scale)) calc(10px * var(--scale));
             margin-top: calc(10px * var(--scale));
+            letter-spacing: 0px !important;
+            text-align: justify;
         }
 
         &__title {
-            font-weight: 700;
+            // font-weight: 700;
             // font-size: calc(158px * var(--scale));
-            font-size: calc(140px * var(--scale));
+            // font-size: calc(140px * var(--scale)) !important;
+            font-size: calc(166px * var(--scale)) !important;
         }
 
         &__title2 {
             font-weight: 700;
             // font-size: calc(142px * var(--scale));
-            font-size: calc(110px * var(--scale));
+            // font-size: calc(110px * var(--scale));
+            font-size: calc(155px * var(--scale));
         }
 
         &__title3 {
             font-weight: 700;
             // font-size: calc(112px * var(--scale));
-            font-size: calc(92px * var(--scale));
+            // font-size: calc(92px * var(--scale));
+            font-size: calc(122px * var(--scale));
         }
 
         &__title4 {
@@ -149,37 +160,102 @@
             font-size: calc(173px * var(--scale));
         }
 
-        &_1 {
-            height: calc(130px * var(--scale));
+        &_1_1 {
+            height: calc(360px * var(--scale));
+
+            &_title {
+                font-size: calc(460px * var(--scale));
+            }
         }
 
-        &_2 {
-            height: calc(70px * var(--scale));
+        &_1_2 {
+            height: calc(218px * var(--scale));
+
+            &_title {
+                font-size: calc(270px * var(--scale));
+            }
         }
 
-        &_3 {
-            height: calc(140px * var(--scale));
+        &_1_3 {
+            height: calc(72px * var(--scale));
+
+            &_title {
+                font-size: calc(110px * var(--scale));
+            }
         }
 
-        &_4 {
-            height: calc(160px * var(--scale));
+        &_2_1 {
+            height: calc(146px * var(--scale));
+
+            &_title {
+                font-size: calc(170px * var(--scale));
+            }
         }
 
-        &_5 {
+        &_2_2 {
+            height: calc(136px * var(--scale));
+
+            &_title {
+                font-size: calc(150px * var(--scale));
+            }
+        }
+
+        &_2_3 {
+            height: calc(138px * var(--scale));
+
+            &_title {
+                font-size: calc(120px * var(--scale));
+            }
+        }
+
+        &_3_1 {
+            height: calc(80px * var(--scale));
+
+            &_title {
+                font-size: calc(104px * var(--scale));
+            }
+        }
+
+        &_3_2 {
+            height: calc(156px * var(--scale));
+
+            &_title {
+                font-size: calc(172px * var(--scale));
+            }
+        }
+
+        &_3_3 {
             height: calc(120px * var(--scale));
+
+            &_title {
+                font-size: calc(105px * var(--scale));
+            }
         }
 
-        &_6 {
-            height: calc(150px * var(--scale));
+        &_4_1 {
+            height: calc(160px * var(--scale));
+
+            &_title {
+                font-size: calc(186px * var(--scale));
+            }
         }
 
-        &_7 {
-            height: calc(110px * var(--scale));
+        &_4_2 {
+            height: calc(114px * var(--scale));
+
+            &_title {
+                font-size: calc(142px * var(--scale));
+            }
         }
 
-        &_8 {
-            height: calc(60px * var(--scale));
+        &_4_3 {
+            height: calc(160px * var(--scale));
+
+            &_title {
+                font-size: calc(155px * var(--scale));
+            }
         }
+
     }
 
     &_ctoblinker {
@@ -231,7 +307,7 @@
         }
 
         &_don {
-            font-size: calc(255px * var(--scale));
+            font-size: calc(275px * var(--scale));
             text-align: justify !important;
             width: 100%;
         }
