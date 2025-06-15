@@ -1,6 +1,6 @@
 import { useGSAP } from '@gsap/react';
 import './Decor.scss';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 export default () => {
 
@@ -8,164 +8,43 @@ export default () => {
 
 
     const scope = useRef(null);
-    useGSAP(() => {
-        gsap.fromTo('.arrow_1', {
-            x: '30vw',
 
-        }, {
-            y: '-500px',
-            x: '10vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 1,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
+    useEffect(() => {
+        const directions = [
+            { selector: '.arrow_1', x: '20vw', y: '-400px', delay: 0 },
+            { selector: '.arrow_2', x: '10vw', y: '-550px', delay: 0.5 },
+            { selector: '.arrow_3', x: '-25vw', y: '-400px', delay: 1 },
+            { selector: '.arrow_4', x: '0vw', y: '-550px', delay: 1.5 },
+            { selector: '.arrow_5', x: '-30vw', y: '-450px', delay: 2 },
+            { selector: '.arrow_6', x: '25vw', y: '-300px', delay: 2.5 },
+            { selector: '.arrow_7', x: '30vw', y: '-400px', delay: 3 },
+            { selector: '.arrow_8', x: '20vw', y: '-550px', delay: 3.5 },
+            { selector: '.arrow_9', x: '-20vw', y: '-300px', delay: 4 },
+            { selector: '.arrow_10', x: '-35vw', y: '-550px', delay: 4.5 },
+        ];
 
-            }
-        })
-        gsap.fromTo('.arrow_2', {
-            x: '0vw',
-        }, {
-            y: '-500px',
-            x: '10vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 3,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-            }
-        })
+        directions.forEach(({ selector, x, y, delay }) => {
+            const tl = gsap.timeline({ repeat: -1, repeatDelay: 1, delay });
 
-        gsap.fromTo('.arrow_3', {
-            x: '-10vw',
-        }, {
-            y: '-400px',
-            x: '-15vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 6,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-
-            }
-        })
-
-
-        gsap.fromTo('.arrow_4', {
-            x: '-5vw',
-        }, {
-            y: '-600px',
-            x: '0vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 1,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-
-            }
-        })
-
-        gsap.fromTo('.arrow_5', {
-            x: '-10vw',
-        }, {
-            y: '-500px',
-            x: '-30vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 4,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-
-            }
-        })
-        gsap.fromTo('.arrow_6', {
-            x: '15vw',
-        }, {
-            y: '-300px',
-            x: '25vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 8,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-
-            }
-        })
-        gsap.fromTo('.arrow_7', {
-            x: '20vw',
-
-        }, {
-            y: '-400px',
-            x: '30vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 3,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-
-            }
-        })
-        gsap.fromTo('.arrow_8', {
-            x: '10vw',
-
-        }, {
-            y: '-500px',
-            x: '20vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 10,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-
-            }
-        })
-        gsap.fromTo('.arrow_9', {
-            x: '-10vw',
-        }, {
-            y: '-300px',
-            x: '-20vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 2,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-
-            }
-        })
-        gsap.fromTo('.arrow_10', {
-            x: '-15vw',
-        }, {
-            y: '-600px',
-            x: '-30vw',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.Decor',
-                scrub: 4,
-                // markers: true,
-                start: '0% 100%',
-                end: '150% 100%',
-
-            }
-        })
-    }, { scope: scope })
+            tl.set(selector, { x: '0vw', y: '100vh', opacity: 0 })
+              .to(selector, {
+                opacity: 1,
+                duration: 1,
+                ease: 'power2.in'
+              })
+              .to(selector, {
+                x,
+                y,
+                duration: 2,
+                ease: 'power2.out'
+              })
+              .to(selector, {
+                opacity: 0,
+                duration: 3,
+                ease: 'power1.in'
+              });
+        });
+    }, []);
 
 
     return (

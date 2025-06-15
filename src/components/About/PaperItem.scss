@@ -103,6 +103,14 @@
             display: flex;
             justify-content: space-between;
             letter-spacing: -2px !important;
+            &_small{
+                justify-content: start;
+                font-family: 'Obrazec';
+                text-transform: uppercase;
+                width: 100%;
+                display: flex;
+                letter-spacing: -2px !important;
+            }
         }
 
         &_line {
@@ -120,6 +128,14 @@
             margin-top: calc(10px * var(--scale));
             letter-spacing: 0px !important;
             text-align: justify;
+            &_bold{
+                color: #000;
+                font-size: calc(40px * var(--scale));
+                margin-top: calc(10px * var(--scale));
+                letter-spacing: 0px !important;
+                text-align: center;
+                font-weight: 700;
+            }
         }
 
         &__title {
@@ -181,6 +197,9 @@
 
             &_title {
                 font-size: calc(110px * var(--scale));
+                &_m{
+                    font-size: calc(105px * var(--scale)) !important;
+                }
             }
         }
 
@@ -237,6 +256,16 @@
 
             &_title {
                 font-size: calc(186px * var(--scale));
+                &_small{
+                    font-size: calc(115px * var(--scale));
+                    color: transparent !important;
+                    -webkit-text-stroke: 2px #000;
+                }
+                &_l{
+                    font-size: calc(170px * var(--scale));
+                    color: transparent !important;
+                    -webkit-text-stroke: 2px #000;
+                }
             }
         }
 
@@ -288,6 +317,7 @@
         display: flex;
         flex-wrap: wrap;
         align-content: start;
+        justify-content: center;
 
         .stretch-helper::after {
             content: '';
@@ -319,11 +349,14 @@
         }
 
         img {
-            margin-top: calc(50px * var(--scale));
-            max-width: calc(630px * var(--scale));
-            min-width: calc(630px * var(--scale));
+            margin: 0 auto;
+            margin-top: calc(45px * var(--scale)) !important;
+            max-width: calc(580px * var(--scale));
+            min-width: calc(580px * var(--scale));
             max-height: calc(400px * var(--scale));
-            min-height: calc(320px * var(--scale));
+            min-height: calc(315px * var(--scale));
+            left: 0 !important;
+            // top: -25px !important;
         }
     }
 
