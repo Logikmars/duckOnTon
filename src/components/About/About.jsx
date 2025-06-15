@@ -18,15 +18,15 @@ const paperItems = [
             </div>
             <div className='PaperItem_header PaperItem_header_1_3'>
                 <span className='PaperItem_header_xxl PaperItem_header_1_3_title'>
-                    NICE<span> </span>TO<span> </span>MEET<span> </span>YOU
+                    LET`S<span> </span>GET<span> </span>QUACKIN`
                 </span>
             </div>
 
-            <div className='PaperItem_ctoblinker free_img'>
+            {/* <div className='PaperItem_ctoblinker free_img'>
                 <div className='finlandica PaperItem_ctoblinker_inner'>
                     CLICK TO OPEN
                 </div>
-            </div>
+            </div> */}
             <img src="/img/clickToOpen.webp" alt="" />
         </div>,
     },
@@ -35,26 +35,31 @@ const paperItems = [
             <>
                 <div className='PaperItem_header PaperItem_header_2_1'>
                     <span className='PaperItem_header_xxl PaperItem_header_2_1_title'>
-                        THE<span> </span>DARING
+                        TON'S<span> </span>
                     </span>
                 </div>
 
                 <div className='PaperItem_header PaperItem_header_2_2'>
                     <span className='PaperItem_header_xxl PaperItem_header_2_2_title'>
-                        DUCK<span> </span>OF<span> </span>THE
+                        GODDUCK<span> </span>
                     </span>
                 </div>
-                <div className='PaperItem_header PaperItem_header_2_3'>
+                {/* <div className='PaperItem_header PaperItem_header_2_3'>
                     <span className='PaperItem_header_xxl PaperItem_header_2_3_title'>
                         TON<span> </span>ECOSYSTEM
                     </span>
-                </div>
+                </div> */}
 
 
                 <div className='PaperItem_header_line'></div>
             </>,
         text: <div className='PaperItem_header_description CrimsonPro'>
-            We ducks have been part of Telegram for a while, but now it's time to show our true power. I'm here to lead the duck vanguard and help TON reach the top of crypto.
+            <span className='PaperItem_header_description_bold'>As TON soared</span>, I stayed quiet, pulling strings behind Telegram’s curtain.
+            <br />
+            Hidden yet powerful, invisible yet unstoppable – until today.
+            <br />
+            <span className='PaperItem_header_description_bold'>I’m stepping out of the shadows,</span> claiming my throne as TON’s legendary mascot and crypto’s smoothest operator.
+
         </div>
     },
     {
@@ -65,24 +70,27 @@ const paperItems = [
             <>
                 <div className='PaperItem_header PaperItem_header_3_1'>
                     <span className='PaperItem_header_xxl PaperItem_header_3_1_title'>
-                        FROM<span> </span>AN<span> </span>INNOCENT
+                        FROM<span> </span>STICKERS<span> </span>
                     </span>
                 </div>
 
                 <div className='PaperItem_header PaperItem_header_3_2'>
                     <span className='PaperItem_header_xxl PaperItem_header_3_2_title'>
-                        STICKER<span> </span>to
+                        TO ICON
                     </span>
                 </div>
-                <div className='PaperItem_header PaperItem_header_3_3'>
+                {/* <div className='PaperItem_header PaperItem_header_3_3'>
                     <span className='PaperItem_header_xxl PaperItem_header_3_3_title'>
                         A<span> </span>REBEL<span> </span>DUCKLING
                     </span>
-                </div>
+                </div> */}
                 <div className='PaperItem_header_line'></div>
             </>,
         text: <div className='PaperItem_header_description CrimsonPro'>
-            Despite attempts to suppress us, ducks spread everywhere — stickers, memes, even shout-outs from Paul Du Rove. All these symbols merged to form me, a rebellious duckling guiding TON's next evolution.
+            While rivals chased fleeting hype, I silently conquered Telegram – in stickers, viral memes, and subtle nods whispered by Paul Du Rove himself.
+            <br />
+            Now these symbols have come alive in me: DON – the duck destined to lead TON’s next evolution <span className='PaperItem_header_description_bold'> and rewrite crypto’s narrative.</span>
+
         </div>
     },
     {
@@ -93,25 +101,40 @@ const paperItems = [
             <>
                 <div className='PaperItem_header PaperItem_header_4_1'>
                     <span className='PaperItem_header_xxl PaperItem_header_4_1_title'>
-                        SCALE<span> </span>AND
+                        DUCK<span> </span>
                     </span>
                 </div>
 
-                <div className='PaperItem_header PaperItem_header_4_2'>
+                {/* <div className='PaperItem_header PaperItem_header_4_2'>
                     <span className='PaperItem_header_xxl PaperItem_header_4_2_title'>
                         UNBREAKABLE
                     </span>
-                </div>
+                </div> */}
                 <div className='PaperItem_header PaperItem_header_4_3'>
                     <span className='PaperItem_header_xxl PaperItem_header_4_3_title'>
-                        DUCK<span> </span>POWER
+                        DOMINANCE<span> </span>
                     </span>
                 </div>
                 <div className='PaperItem_header_line'></div>
             </>,
-        text: <div className='PaperItem_header_description CrimsonPro'>
-            TON is built for a huge audience while staying true to its core principles. This unique blend gave us ducks the perfect ground for growth. Now we’re ready to shake up Web3 together.
-        </div>
+        text: <>
+            <div className='PaperItem_header_description CrimsonPro'>
+                TON is built to scale and dominate, yet never compromises its principles –
+                <span className='PaperItem_header_description_bold'>
+                the perfect stage for me, DON, to truly spread my wings.
+                </span>
+            </div>
+            <div className='PaperItem_header PaperItem_header_4_1'>
+                <span className='PaperItem_header_xxl PaperItem_header_4_1_title_l'>
+                    LET'S<span> </span>RULE
+                </span>
+            </div>
+            <div className='PaperItem_header PaperItem_header_4_2'>
+                <span className='PaperItem_header_xxl PaperItem_header_4_1_title_small'>
+                    WEB3<span> </span>TOGETHER.
+                </span>
+            </div>
+        </>
     },
     {
         img: '/img/duck3.webp'

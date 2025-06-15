@@ -14,7 +14,7 @@ export default () => {
 
         }, {
             y: '-500px',
-            x: '10vw',
+            x: '20vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -22,13 +22,12 @@ export default () => {
                 // markers: true,
                 start: '0% 100%',
                 end: '150% 100%',
-
             }
         })
         gsap.fromTo('.arrow_2', {
             x: '0vw',
         }, {
-            y: '-500px',
+            y: '-600px',
             x: '10vw',
             ease: 'none',
             scrollTrigger: {
@@ -44,7 +43,7 @@ export default () => {
             x: '-10vw',
         }, {
             y: '-400px',
-            x: '-15vw',
+            x: '-25vw',
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Decor',
@@ -60,7 +59,7 @@ export default () => {
         gsap.fromTo('.arrow_4', {
             x: '-5vw',
         }, {
-            y: '-600px',
+            y: '-650px',
             x: '0vw',
             ease: 'none',
             scrollTrigger: {
@@ -123,7 +122,7 @@ export default () => {
             x: '10vw',
 
         }, {
-            y: '-500px',
+            y: '-600px',
             x: '20vw',
             ease: 'none',
             scrollTrigger: {
