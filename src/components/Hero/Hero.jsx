@@ -1,25 +1,18 @@
 import './Hero.scss';
-
-
-import { useRive, useStateMachineInput } from '@rive-app/react-canvas';
 import { useEffect, useState } from 'react';
 import RiveFade from './RiveFade';
 import RiveUnFade from './RiveUnFade';
 
-const cantToggleMs = 2500
-
+const cantToggleMs = 2500;
+const ON_DELAY = 300; // Задержка, когда включается
+const OFF_DELAY = 1000; // Задержка, когда выключается
 
 export default () => {
-
     const [canToggle, setcanToggle] = useState(true);
-
     const [lightsOn, setlightsOn] = useState(false);
     const [ontrigger, setontrigger] = useState(0);
     const [offtrigger, setofftrigger] = useState(0);
     const [taptrigger, settaptrigger] = useState(0);
-
-    const [turnerTrigger, setturnerTrigger] = useState(0);
-
     const [coords, setCoords] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
@@ -32,48 +25,55 @@ export default () => {
         return () => window.removeEventListener('mousemove', handleMouseMove);
     }, []);
 
+    useEffect(() => {
+        if (ontrigger) {
+            const t = setTimeout(() => setlightsOn(true), ON_DELAY);
+            return () => clearTimeout(t);
+        }
+    }, [ontrigger]);
 
+    useEffect(() => {
+        if (offtrigger) {
+            const t = setTimeout(() => setlightsOn(false), OFF_DELAY);
+            return () => clearTimeout(t);
+        }
+    }, [offtrigger]);
 
     return (
-        <div className='Hero' style={{
-            backgroundColor: lightsOn ? '#0000' : '#000'
-        }}>
+        <div
+            className='Hero'
+            style={{ backgroundColor: lightsOn ? '#0000' : '#000' }}
+        >
             <div className='Hero_tapcheck free_img'>
-                <div className='Hero_tapcheck_inner' onClick={() => {
-                    if (!lightsOn) {
-                        setontrigger(Math.random())
-                        setlightsOn(true)
-
-                        setcanToggle(false)
-                        setTimeout(() => {
-                            setcanToggle(true)
-                        }, cantToggleMs);
-                    } else {
-                        settaptrigger(Math.random())
-                    }
-                }}></div>
+                <div
+                    className='Hero_tapcheck_inner'
+                    onClick={() => {
+                        if (!lightsOn) {
+                            setontrigger(Math.random());
+                            setcanToggle(false);
+                            setTimeout(() => setcanToggle(true), cantToggleMs);
+                        } else {
+                            settaptrigger(Math.random());
+                        }
+                    }}
+                ></div>
             </div>
+
             <div className='Hero_turner free_img'>
-                <div className='Hero_turner_inner' onClick={() => {
+                <div
+                    className='Hero_turner_inner'
+                    onClick={() => {
+                        if (!canToggle) return;
+                        setcanToggle(false);
+                        setTimeout(() => setcanToggle(true), cantToggleMs);
 
-                    if (!canToggle) return
-
-                    setcanToggle(false)
-                    setTimeout(() => {
-                        setcanToggle(true)
-                    }, cantToggleMs);
-
-
-                    if (lightsOn) {
-                        setofftrigger(Math.random())
-                        setTimeout(() => {
-                            setlightsOn(false)
-                        }, 1000);
-                    } else {
-                        setontrigger(Math.random())
-                        setlightsOn(true)
-                    }
-                }}></div>
+                        if (lightsOn) {
+                            setofftrigger(Math.random());
+                        } else {
+                            setontrigger(Math.random());
+                        }
+                    }}
+                ></div>
             </div>
 
             <RiveFade
@@ -89,8 +89,6 @@ export default () => {
                 taptrigger={taptrigger}
                 lightsOn={lightsOn}
             />
-
-
         </div>
-    )
-}
+    );
+};
