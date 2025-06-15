@@ -11,16 +11,16 @@ export default () => {
 
     useEffect(() => {
         const directions = [
-            { selector: '.arrow_1', x: '20vw', y: '-400px', delay: 0 },
-            { selector: '.arrow_2', x: '10vw', y: '-500px', delay: 0.5 },
-            { selector: '.arrow_3', x: '-25vw', y: '-400px', delay: 1 },
+            { selector: '.arrow_1', x: '25vw', y: '-400px', delay: 0 },
+            { selector: '.arrow_2', x: '14vw', y: '-530px', delay: 0.5 },
+            { selector: '.arrow_3', x: '-30vw', y: '-400px', delay: 1 },
             { selector: '.arrow_4', x: '0vw', y: '-500px', delay: 1.5 },
-            { selector: '.arrow_5', x: '-30vw', y: '-450px', delay: 2 },
-            { selector: '.arrow_6', x: '25vw', y: '-300px', delay: 2.5 },
-            { selector: '.arrow_7', x: '30vw', y: '-400px', delay: 3 },
-            { selector: '.arrow_8', x: '20vw', y: '-500px', delay: 3.5 },
-            { selector: '.arrow_9', x: '-25vw', y: '-300px', delay: 4 },
-            { selector: '.arrow_10', x: '-35vw', y: '-500px', delay: 4.5 },
+            { selector: '.arrow_5', x: '-15vw', y: '-450px', delay: 2 },
+            { selector: '.arrow_6', x: '35vw', y: '-300px', delay: 2.5 },
+            { selector: '.arrow_7', x: '25vw', y: '-500px', delay: 3 },
+            { selector: '.arrow_8', x: '32vw', y: '-450px', delay: 3.5 },
+            { selector: '.arrow_9', x: '-35vw', y: '-300px', delay: 4 },
+            { selector: '.arrow_10', x: '-10vw', y: '-500px', delay: 4.5 },
         ];
 
         directions.forEach(({ selector, x, y, rotate, delay }) => {
