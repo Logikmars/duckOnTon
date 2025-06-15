@@ -12,7 +12,7 @@ export default () => {
     useEffect(() => {
         const directions = [
             { selector: '.arrow_1', x: '20vw', y: '-400px', delay: 0 },
-            { selector: '.arrow_2', x: '10vw', y: '-500px', delay: 0.5 },
+            { selector: '.arrow_2', x: '10vw', y: '-530px', delay: 0.5 },
             { selector: '.arrow_3', x: '-25vw', y: '-400px', delay: 1 },
             { selector: '.arrow_4', x: '0vw', y: '-500px', delay: 1.5 },
             { selector: '.arrow_5', x: '-30vw', y: '-450px', delay: 2 },
