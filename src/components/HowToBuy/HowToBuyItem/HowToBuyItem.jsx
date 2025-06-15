@@ -1,12 +1,12 @@
 import './HowToBuyItem.scss';
-export default ({ img, index, title, description, currentSlide }) => {
+export default ({ img, index, title, description, currentSlide, setSlide }) => {
     return (
         <div className='HowToBuyItem_wrapper free_img' style={{
             transform: `translate(${(currentSlide - index) * 1200 * -1}px,0px) `,
             opacity: (currentSlide === index) ? 1 : .5,
             filter: `blur(${(currentSlide === index) ? 0 : 10}px)`,
         }}>
-            <div className='HowToBuyItem'>
+            <div className='HowToBuyItem' onClick={() => { setSlide(index) }}>
                 <div className='HowToBuyItem__img'>
                     <div className='HowToBuyItem__index free_img'>
                         <p className='HowToBuyItem__index_text outfit'>{index}</p>

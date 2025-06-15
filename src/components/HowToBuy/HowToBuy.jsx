@@ -84,6 +84,7 @@ export default () => {
                                 title={el.title}
                                 description={el.description}
                                 currentSlide={currentSlide}
+                                setSlide={setcurrentSlide}
                             />
                         ))}
                         <div className='HowToBuy_arrow free_img'>

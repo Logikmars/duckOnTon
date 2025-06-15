@@ -19,7 +19,7 @@ export default () => {
             { selector: '.arrow_6', x: '25vw', y: '-300px', delay: 2.5 },
             { selector: '.arrow_7', x: '30vw', y: '-400px', delay: 3 },
             { selector: '.arrow_8', x: '20vw', y: '-500px', delay: 3.5 },
-            { selector: '.arrow_9', x: '-20vw', y: '-300px', delay: 4 },
+            { selector: '.arrow_9', x: '-25vw', y: '-300px', delay: 4 },
             { selector: '.arrow_10', x: '-35vw', y: '-500px', delay: 4.5 },
         ];
 
