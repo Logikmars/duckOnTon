@@ -56,6 +56,12 @@
         pointer-events: none;
     }
 
+    &_text{
+        width: 250px !important;
+        font-family: 'Outfit';
+        font-weight: 600;
+    }
+
     &__info {
         width: 100% !important;
         display: flex;
