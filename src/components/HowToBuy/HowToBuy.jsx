@@ -39,26 +39,26 @@ export default () => {
 
 
     const scope = useRef(null);
-    useGSAP(() => {
-        gsap.to('.HowToBuy', {
-            y: '0px',
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.HowToBuy_wrapper',
-                scrub: 0,
-                // markers: true,
-                pin: '.HowToBuy_wrapper',
-                pinSpacing: false,
-                start: 'top 0%',
-                end: 'bottom 100%',
-                onUpdate: self => {
-                    const percent = Math.round(self.progress * 100);
-                    // console.log('Progress:', percent + '%');
-                    setcurrentSlide(Math.max(Math.ceil(percent / (100 / 4)), 1))
-                }
-            }
-        })
-    }, { scope: scope })
+    // useGSAP(() => {
+    //     gsap.to('.HowToBuy', {
+    //         y: '0px',
+    //         ease: 'none',
+    //         scrollTrigger: {
+    //             trigger: '.HowToBuy_wrapper',
+    //             scrub: 0,
+    //             // markers: true,
+    //             pin: '.HowToBuy_wrapper',
+    //             pinSpacing: false,
+    //             start: 'top 0%',
+    //             end: 'bottom 100%',
+    //             onUpdate: self => {
+    //                 const percent = Math.round(self.progress * 100);
+    //                 // console.log('Progress:', percent + '%');
+    //                 setcurrentSlide(Math.max(Math.ceil(percent / (100 / 4)), 1))
+    //             }
+    //         }
+    //     })
+    // }, { scope: scope })
 
 
 
@@ -86,6 +86,20 @@ export default () => {
                                 currentSlide={currentSlide}
                             />
                         ))}
+                        <div className='HowToBuy_arrow free_img'>
+                            <div className='HowToBuy_arrow_inner' onClick={() => {
+                                setcurrentSlide(prev => Math.max(prev - 1, 1))
+                            }}>
+                                <img src="/arrow.svg" alt="" />
+                            </div>
+                        </div>
+                        <div className='HowToBuy_arrow HowToBuy_arrow_r free_img'>
+                            <div className='HowToBuy_arrow_inner' onClick={() => {
+                                setcurrentSlide(prev => Math.min(prev + 1, 4))
+                            }}>
+                                <img src="/arrow.svg" alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
