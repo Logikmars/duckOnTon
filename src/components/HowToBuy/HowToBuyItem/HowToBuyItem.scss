@@ -19,15 +19,27 @@
         min-width: 300px;
     }
 
+    @media(max-width: 800px) {
+        width: 80% !important;
+        min-height: 400px;
+    }
+
     &_wrapper {
         // align-items: start !important;
         transition: transform 500ms ease-in-out, opacity 500ms ease-in-out, filter 500ms ease-in-out;
     }
 
 
-    @media(max-width: 800px) {
-        width: 80% !important;
-        min-height: 400px;
+    &_current {
+        &:hover {
+            cursor: url('/img/pointer.png'), pointer !important;
+
+            div,
+            span,
+            p {
+                cursor: url('/img/pointer.png'), pointer !important;
+            }
+        }
     }
 
     &__img {

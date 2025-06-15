@@ -6,7 +6,7 @@ export default ({ img, index, title, description, currentSlide, setSlide }) => {
             opacity: (currentSlide === index) ? 1 : .5,
             filter: `blur(${(currentSlide === index) ? 0 : 10}px)`,
         }}>
-            <div className='HowToBuyItem' onClick={() => { setSlide(index) }}>
+            <div className={`HowToBuyItem ${index !== currentSlide && 'HowToBuyItem_current'}  `} onClick={() => { setSlide(index) }}>
                 <div className='HowToBuyItem__img'>
                     <div className='HowToBuyItem__index free_img'>
                         <p className='HowToBuyItem__index_text outfit'>{index}</p>

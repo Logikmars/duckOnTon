@@ -6,8 +6,12 @@ import { useEffect, useState } from 'react';
 import RiveFade from './RiveFade';
 import RiveUnFade from './RiveUnFade';
 
+const cantToggleMs = 2500
+
 
 export default () => {
+
+    const [canToggle, setcanToggle] = useState(true);
 
     const [lightsOn, setlightsOn] = useState(false);
     const [ontrigger, setontrigger] = useState(0);
@@ -37,20 +41,29 @@ export default () => {
             <div className='Hero_tapcheck free_img'>
                 <div className='Hero_tapcheck_inner' onClick={() => {
                     if (!lightsOn) {
-                        // onInput?.fire()
                         setontrigger(Math.random())
-                        // setTimeout(() => {
                         setlightsOn(true)
-                        // }, 1000);
+
+                        setcanToggle(false)
+                        setTimeout(() => {
+                            setcanToggle(true)
+                        }, cantToggleMs);
                     } else {
-                        // tapInput?.fire()
                         settaptrigger(Math.random())
-                        // signInput?.fire()
                     }
                 }}></div>
             </div>
             <div className='Hero_turner free_img'>
                 <div className='Hero_turner_inner' onClick={() => {
+
+                    if (!canToggle) return
+
+                    setcanToggle(false)
+                    setTimeout(() => {
+                        setcanToggle(true)
+                    }, cantToggleMs);
+
+
                     if (lightsOn) {
                         setofftrigger(Math.random())
                         setTimeout(() => {
@@ -58,7 +71,6 @@ export default () => {
                         }, 1000);
                     } else {
                         setontrigger(Math.random())
-                        // onInput?.fire()
                         setlightsOn(true)
                     }
                 }}></div>
