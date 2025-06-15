@@ -49,8 +49,9 @@
 
     img {
 
-        user-drag: none;
         -webkit-user-drag: none;
+        -webkit-user-select: none;
+        user-select: none;
         pointer-events: none;
     }
 
@@ -113,7 +114,6 @@
             img {
                 width: 90vw;
                 max-width: 1000px;
-                pointer-events: none;
 
                 @media(max-width: 800px) {
                     width: 150vw;

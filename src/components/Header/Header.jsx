@@ -5,7 +5,7 @@ export default () => {
             <div className='Header'>
 
                 <div className='Header__logo'>
-                    <img src="/img/logo.webp" alt="" className='Header__logo_img' />
+                    <img draggable='false' src="/img/logo.webp" alt="" className='Header__logo_img' />
                     <a className='Header__logo_title obrazec Header__el Header__el_selected memeText'>
                         {
                             'DON'.split('').map((letter) => {
@@ -19,13 +19,13 @@ export default () => {
 
                 <div className='Header_media'>
                     <a href='https://t.me/DonDuckPortal' target='_blank' className='Header_media_element'>
-                        <img src="/img/tg.webp" alt="" />
+                        <img draggable='false' src="/img/tg.webp" alt="" />
                     </a>
                     <a className='Header_media_element'>
-                        <img src="/img/dex.webp" alt="" />
+                        <img draggable='false' src="/img/dex.webp" alt="" />
                     </a>
                     <a href='https://x.com/donduckton' target='_blank' className='Header_media_element'>
-                        <img src="/img/x.webp" alt="" />
+                        <img draggable='false' src="/img/x.webp" alt="" />
                     </a>
                 </div>
             </div>

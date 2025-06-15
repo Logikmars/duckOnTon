@@ -176,21 +176,22 @@ export default () => {
                         .fill(0)
                         .map((_, index) => {
                             return <div className={`free_img arrow_${index + 1}`}>
-                                <img src={`/img/pdbr${index + 1}.svg`} alt="" />
+                                <img draggable='false' src={`/img/pdbr${index + 1}.svg`} alt="" />
                             </div>
                         })}
 
                     <div className='Decor__info_table free_img'>
-                        <img src="/img/caption1.webp" alt="" />
+                        <img draggable='false' src="/img/caption1.webp" alt="" />
                     </div>
                     <div className='Decor__info_duck free_img'>
-                        <img src="/img/duck.webp" alt="" />
+                        <img draggable='false' src="/img/duck.webp" alt="" />
                     </div>
                     <div className='Decor__info_table Decor__info_table_right free_img'>
-                        <img src="/img/caption2.webp" alt="" />
+                        <img draggable='false' src="/img/caption2.webp" alt="" />
                     </div>
                 </div>
             </div>
         </div>
     )
 }
+

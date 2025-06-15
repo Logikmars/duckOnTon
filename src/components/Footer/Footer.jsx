@@ -8,13 +8,13 @@ export default () => {
             </div>
             <div className='Footer__social'>
                 <a href='https://t.me/DonDuckPortal' target='_blank'>
-                    <img src="/img/tg.webp" alt="" />
+                    <img draggable='false' src="/img/tg.webp" alt="" />
                 </a>
                 <a>
-                    <img src="/img/dex.webp" alt="" />
+                    <img draggable='false' src="/img/dex.webp" alt="" />
                 </a>
                 <a href='https://x.com/donduckton' target='_blank'>
-                    <img src="/img/x.webp" alt="" />
+                    <img draggable='false' src="/img/x.webp" alt="" />
                 </a>
             </div>
         </div>

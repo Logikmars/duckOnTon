@@ -27,7 +27,7 @@ export default () => {
     return (
         <div className='BornOn_wrapper' ref={scope}>
             <div className='BornOn'>
-                <img src="/img/bornOn.webp" alt="" />
+                <img draggable='false' src="/img/bornOn.webp" alt="" />
             </div>
         </div>
     )

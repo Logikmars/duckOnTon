@@ -27,7 +27,7 @@ const paperItems = [
                     CLICK TO OPEN
                 </div>
             </div>
-            <img src="/img/clickToOpen.webp" alt="" />
+            <img draggable='false' src="/img/clickToOpen.webp" alt="" />
         </div>,
     },
     {

@@ -12,7 +12,7 @@ export default ({ img, index, title, description, currentSlide }) => {
                         <p className='HowToBuyItem__index_text outfit'>{index}</p>
                     </div>
                     <div className='HowToBuyItem__img_wrapper'>
-                        <img src={img} alt="" className={`HowToBuyItem__img_${index}`} />
+                        <img draggable='false' src={img} alt="" className={`HowToBuyItem__img_${index}`} />
                     </div>
                 </div>
                 <div className='HowToBuyItem__description'>

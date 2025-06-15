@@ -9,12 +9,12 @@ export default () => {
         {
             img: "/img/htb1.webp",
             title: "Use DeDust or STON.fi",
-            description: "Open DeDust or STON.fi in Google Chrome  or in the browser inside Tonkeeper.Connect your wallet, enter the token name  or paste the $DON contract address.Confirm the action — when Tonkeeper asks for a signature, sign it."
+            description: "Open DeDust or STON.fi in Google Chrome or in the browser inside Tonkeeper. Connect your wallet, enter the token name  or paste the $DON contract address. Confirm the action — when Tonkeeper asks for a signature, sign it."
         },
         {
             img: "/img/htb2.webp",
             title: "Swap TON for $DON",
-            description: "Exchange TON for $DON with no taxes.You don’t need to change the slippage, but if the transaction doesn’t go through — increase it to 1–3%."
+            description: "Exchange TON for $DON with no taxes. You don’t need to change the slippage, but if the transaction doesn’t go through — increase it to 1–3%."
         },
         {
             img: "/img/htb3.webp",
