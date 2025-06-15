@@ -93,6 +93,10 @@
     &_arrow {
         left: calc(-50vw + 50px);
 
+        @media(max-width: 600px) {
+            left: calc(-50vw + 20px);
+        }
+
         &_inner {
             min-width: 60px;
             min-height: 60px;
@@ -111,11 +115,20 @@
         &_r {
             left: calc(50vw - 70px);
             rotate: 180deg;
+
+            @media(max-width: 600px) {
+                left: calc(50vw - 20px);
+            }
+
         }
 
         img {
             width: 40px;
             pointer-events: none;
+
+            @media(max-width: 600px) {
+                width: 30px;
+            }
         }
     }
 }

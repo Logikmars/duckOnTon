@@ -56,9 +56,14 @@
         pointer-events: none;
     }
 
-    &_text{
-        width: 250px !important;
-        font-family: 'Outfit';
+    &_text {
+        min-width: 250px !important;
+
+        // font-family: 'Obrazec';
+        font-family: 'Finlandica';
+        // font-family: 'Outfit';
+        // font-family: 'CrimsonPro';
+
         font-weight: 600;
     }
 
@@ -85,7 +90,8 @@
                 left: 35vw;
                 bottom: 18vw;
             }
-            @media(max-width: 670px){
+
+            @media(max-width: 670px) {
                 bottom: 22vw;
             }
 
@@ -103,7 +109,8 @@
                     left: -32vw;
                     bottom: 19vw;
                 }
-                @media(max-width: 670px){
+
+                @media(max-width: 670px) {
                     bottom: 22vw;
                 }
             }

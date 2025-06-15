@@ -88,14 +88,14 @@ export default () => {
                         ))}
                         <div className='HowToBuy_arrow free_img'>
                             <div className='HowToBuy_arrow_inner' onClick={() => {
-                                setcurrentSlide(prev => Math.max(prev - 1, 1))
+                                setcurrentSlide(prev => prev - 1 < 1 ? 4 : prev - 1)
                             }}>
                                 <img src="/arrow.svg" alt="" />
                             </div>
                         </div>
                         <div className='HowToBuy_arrow HowToBuy_arrow_r free_img'>
                             <div className='HowToBuy_arrow_inner' onClick={() => {
-                                setcurrentSlide(prev => Math.min(prev + 1, 4))
+                                setcurrentSlide(prev => prev + 1 > 4 ? 1 : prev + 1)
                             }}>
                                 <img src="/arrow.svg" alt="" />
                             </div>
