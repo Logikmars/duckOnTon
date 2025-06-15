@@ -17,7 +17,7 @@ const paperItems = [
                 </span>
             </div>
             <div className='PaperItem_header PaperItem_header_1_3'>
-                <span className='PaperItem_header_xxl PaperItem_header_1_3_title'>
+                <span className='PaperItem_header_xxl PaperItem_header_1_3_title_m'>
                     LET`S<span> </span>GET<span> </span>QUACKIN`
                 </span>
             </div>
@@ -112,7 +112,7 @@ const paperItems = [
                 </div> */}
                 <div className='PaperItem_header PaperItem_header_4_3'>
                     <span className='PaperItem_header_xxl PaperItem_header_4_3_title'>
-                        DOMINANCE<span> </span>
+                        DOMINANCE
                     </span>
                 </div>
                 <div className='PaperItem_header_line'></div>
