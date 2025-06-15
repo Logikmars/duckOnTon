@@ -27,22 +27,22 @@ export default () => {
             const tl = gsap.timeline({ repeat: -1, repeatDelay: 1, delay });
 
             tl.set(selector, { x: '0vw', y: '100vh', opacity: 0 })
-              .to(selector, {
-                opacity: 1,
-                duration: 1,
-                ease: 'power2.in'
-              })
-              .to(selector, {
-                x,
-                y,
-                duration: 2,
-                ease: 'power2.out'
-              })
-              .to(selector, {
-                opacity: 0,
-                duration: 3,
-                ease: 'power1.in'
-              });
+                .to(selector, {
+                    opacity: 1,
+                    duration: 1,
+                    ease: 'power2.in'
+                })
+                .to(selector, {
+                    x,
+                    y,
+                    duration: 2,
+                    ease: 'power2.out'
+                })
+                .to(selector, {
+                    opacity: 0,
+                    duration: 3,
+                    ease: 'power1.in'
+                });
         });
     }, []);
 

@@ -102,14 +102,15 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            letter-spacing: -2px !important;
-            &_small{
+            letter-spacing: -4px !important;
+
+            &_small {
                 justify-content: start;
                 font-family: 'Obrazec';
                 text-transform: uppercase;
                 width: 100%;
                 display: flex;
-                letter-spacing: -2px !important;
+                letter-spacing: -4px !important;
             }
         }
 
@@ -128,7 +129,8 @@
             margin-top: calc(10px * var(--scale));
             letter-spacing: 0px !important;
             text-align: justify;
-            &_bold{
+
+            &_bold {
                 color: #000;
                 font-size: calc(40px * var(--scale));
                 margin-top: calc(10px * var(--scale));
@@ -197,25 +199,26 @@
 
             &_title {
                 font-size: calc(110px * var(--scale));
-                &_m{
+
+                &_m {
                     font-size: calc(105px * var(--scale)) !important;
                 }
             }
         }
 
         &_2_1 {
-            height: calc(146px * var(--scale));
+            height: calc(152px * var(--scale));
 
             &_title {
-                font-size: calc(170px * var(--scale));
+                font-size: calc(200px * var(--scale));
             }
         }
 
         &_2_2 {
-            height: calc(136px * var(--scale));
+            height: calc(200px * var(--scale));
 
             &_title {
-                font-size: calc(150px * var(--scale));
+                font-size: calc(205px * var(--scale));
             }
         }
 
@@ -228,15 +231,15 @@
         }
 
         &_3_1 {
-            height: calc(80px * var(--scale));
+            height: calc(90px * var(--scale));
 
             &_title {
-                font-size: calc(104px * var(--scale));
+                font-size: calc(130px * var(--scale));
             }
         }
 
         &_3_2 {
-            height: calc(156px * var(--scale));
+            height: calc(164px * var(--scale));
 
             &_title {
                 font-size: calc(172px * var(--scale));
@@ -255,14 +258,16 @@
             height: calc(160px * var(--scale));
 
             &_title {
-                font-size: calc(186px * var(--scale));
-                &_small{
-                    font-size: calc(115px * var(--scale));
+                font-size: calc(194px * var(--scale));
+
+                &_small {
+                    font-size: calc(125px * var(--scale));
                     color: transparent !important;
                     -webkit-text-stroke: 2px #000;
                 }
-                &_l{
-                    font-size: calc(170px * var(--scale));
+
+                &_l {
+                    font-size: calc(185px * var(--scale));
                     color: transparent !important;
                     -webkit-text-stroke: 2px #000;
                 }
@@ -273,7 +278,7 @@
             height: calc(114px * var(--scale));
 
             &_title {
-                font-size: calc(142px * var(--scale));
+                font-size: calc(152px * var(--scale));
             }
         }
 
@@ -281,7 +286,7 @@
             height: calc(160px * var(--scale));
 
             &_title {
-                font-size: calc(155px * var(--scale));
+                font-size: calc(162px * var(--scale));
             }
         }
 
@@ -289,13 +294,15 @@
 
     &_ctoblinker {
         width: 100% !important;
-        top: calc(180px * var(--scale));
+        top: calc(108px * var(--scale));
+        left: calc(76px * var(--scale));
         z-index: 9;
+        rotate: -1.5deg;
 
         &_inner {
             text-align: center;
             white-space: nowrap;
-            font-size: calc(90px * var(--scale));
+            font-size: calc(32px * var(--scale));
             text-shadow: calc(0px * var(--scale)) calc(0px * var(--scale)) calc(10px * var(--scale)) #000;
             animation: blinker .4s infinite ease-in-out alternate;
 
@@ -351,10 +358,10 @@
         img {
             margin: 0 auto;
             margin-top: calc(45px * var(--scale)) !important;
-            max-width: calc(580px * var(--scale));
-            min-width: calc(580px * var(--scale));
-            max-height: calc(400px * var(--scale));
-            min-height: calc(315px * var(--scale));
+            max-width: calc(554px * var(--scale));
+            min-width: calc(550px * var(--scale));
+            max-height: calc(306px * var(--scale));
+            min-height: calc(306px * var(--scale));
             left: 0 !important;
             // top: -25px !important;
         }

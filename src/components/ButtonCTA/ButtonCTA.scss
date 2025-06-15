@@ -13,7 +13,7 @@
 
     canvas {
         position: relative;
-        top: calc(35dvh);
+        top: calc(36.5dvh);
         max-width: 500px;
 
         object-fit: contain;
@@ -29,11 +29,11 @@
         min-height: 110px;
         // background: #f008;
         position: relative;
-        top: calc(35dvh + 55px);
+        top: calc(36.5dvh + 55px);
         pointer-events: all;
 
         @media(max-width: 600px) {
-            top: calc(35dvh + 30px);
+            top: calc(36.5dvh + 30px);
             min-width: 200px;
             min-height: 65px;
         }

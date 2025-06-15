@@ -22,11 +22,11 @@ const paperItems = [
                 </span>
             </div>
 
-            {/* <div className='PaperItem_ctoblinker free_img'>
-                <div className='finlandica PaperItem_ctoblinker_inner'>
+            <div className='PaperItem_ctoblinker free_img'>
+                <div className='obrazecNoLS PaperItem_ctoblinker_inner'>
                     CLICK TO OPEN
                 </div>
-            </div> */}
+            </div>
             <img src="/img/clickToOpen.webp" alt="" />
         </div>,
     },
@@ -54,11 +54,11 @@ const paperItems = [
                 <div className='PaperItem_header_line'></div>
             </>,
         text: <div className='PaperItem_header_description CrimsonPro'>
-            <span className='PaperItem_header_description_bold'>As TON soared</span>, I stayed quiet, pulling strings behind Telegram’s curtain.
+            <span className='PaperItem_header_description_bold CrimsonPro'>As TON soared</span>, I stayed quiet, pulling strings behind Telegram’s curtain.
             <br />
             Hidden yet powerful, invisible yet unstoppable – until today.
             <br />
-            <span className='PaperItem_header_description_bold'>I’m stepping out of the shadows,</span> claiming my throne as TON’s legendary mascot and crypto’s smoothest operator.
+            <span className='PaperItem_header_description_bold CrimsonPro'>I’m stepping out of the shadows,</span> claiming my throne as TON’s legendary mascot and crypto’s smoothest operator.
 
         </div>
     },
@@ -89,12 +89,16 @@ const paperItems = [
         text: <div className='PaperItem_header_description CrimsonPro'>
             While rivals chased fleeting hype, I silently conquered Telegram – in stickers, viral memes, and subtle nods whispered by Paul Du Rove himself.
             <br />
-            Now these symbols have come alive in me: DON – the duck destined to lead TON’s next evolution <span className='PaperItem_header_description_bold'> and rewrite crypto’s narrative.</span>
+            Now these symbols have come alive in me: DON – the duck destined to lead TON’s next evolution <span className='PaperItem_header_description_bold CrimsonPro'> and rewrite crypto’s narrative.</span>
 
         </div>
     },
     {
         img: '/img/duck2.webp'
+    },
+
+    {
+        img: '/img/duck3.webp'
     },
     {
         header:
@@ -120,7 +124,7 @@ const paperItems = [
         text: <>
             <div className='PaperItem_header_description CrimsonPro'>
                 TON is built to scale and dominate, yet never compromises its principles –
-                <span className='PaperItem_header_description_bold'>
+                <span className='PaperItem_header_description_bold CrimsonPro'>
                     the perfect stage for me, DON, to truly spread my wings.
                 </span>
             </div>
@@ -135,9 +139,6 @@ const paperItems = [
                 </span>
             </div>
         </>
-    },
-    {
-        img: '/img/duck3.webp'
     },
     {
         img: '/img/duck4.webp'

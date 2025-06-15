@@ -35,10 +35,12 @@ export default ({ el, index, page, setPage, pagesCount, paperItems }) => {
         >
             <div className='PaperItem'>
                 {el.start && <div className='PaperItem_textWrapper'>{el.start}</div>}
-                {el.text ? <div className='PaperItem_textWrapper'>
-                    {el.header}{el.text}
-                </div> : <>
-                    <img draggable='false' src={el.img} alt="" />
+                {!el.start && <>
+                    {el.text ? <div className='PaperItem_textWrapper'>
+                        {el.header}{el.text}
+                    </div> : <>
+                        <img draggable='false' src={el.img} alt="" />
+                    </>}
                 </>}
             </div>
         </div>
