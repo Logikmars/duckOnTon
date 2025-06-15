@@ -47,17 +47,57 @@ export default () => {
     }, []);
 
 
+    const els = [
+        {
+            text: '$DON FAMILY STRONG!'
+        },
+        {
+            text: 'DIAMOND HANDS ONLY'
+        },
+        {
+            text: 'BULLISH FOREVER'
+        },
+        {
+            text: 'FROM ZERO TO HERO'
+        },
+        {
+            text: 'NO FEAR, JUST $DON!'
+        },
+        {
+            text: 'BEST COMMUNITY'
+        },
+        {
+            text: 'ONE COIN. ONE FAMILY. ONE MOON – $DON!'
+        },
+        {
+            text: 'I CHOOSE $DON'
+        },
+        {
+            text: '$DON IS NOT JUST A COIN, IT’S A MOVEMENT!'
+        },
+        {
+            text: 'TO THE MOON'
+        }
+    ]
+
     return (
         <div className='Decor_wrapper' ref={scope}>
             <div className='Decor'>
                 <div className='Decor__info'>
-                    {Array(10)
+                    {/* {Array(10)
                         .fill(0)
                         .map((_, index) => {
                             return <div className={`free_img arrow_${index + 1}`}>
                                 <img draggable='false' src={`/img/pdbr${index + 1}.svg`} alt="" />
                             </div>
-                        })}
+                        })} */}
+                    {
+                        els.map((el, index) => (
+                            <div className={`free_img arrow_${index + 1} Decor_text`}>
+                                {el.text}
+                            </div>
+                        ))
+                    }
 
                     <div className='Decor__info_table free_img'>
                         <img draggable='false' src="/img/caption1.webp" alt="" />
