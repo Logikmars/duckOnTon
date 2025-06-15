@@ -9,12 +9,12 @@ import HowToBuy from "./components/HowToBuy/HowToBuy";
 import BornOn from "./components/BornOn/BornOn";
 
 
+import ButtonCTA from "./components/ButtonCTA/ButtonCTA";
 
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import ButtonCTA from "./components/ButtonCTA/ButtonCTA";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
