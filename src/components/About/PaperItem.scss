@@ -102,7 +102,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            letter-spacing: -4px !important;
+            letter-spacing: calc(var(--scale) * -4px) !important;
 
             &_small {
                 justify-content: start;
@@ -110,7 +110,7 @@
                 text-transform: uppercase;
                 width: 100%;
                 display: flex;
-                letter-spacing: -4px !important;
+                letter-spacing: calc(var(--scale) * -4px) !important;
             }
         }
 
@@ -263,13 +263,13 @@
                 &_small {
                     font-size: calc(125px * var(--scale));
                     color: transparent !important;
-                    -webkit-text-stroke: 2px #000;
+                    -webkit-text-stroke: calc(var(--scale) * 2px) #000;
                 }
 
                 &_l {
                     font-size: calc(185px * var(--scale));
                     color: transparent !important;
-                    -webkit-text-stroke: 2px #000;
+                    -webkit-text-stroke: calc(var(--scale) * 2px) #000;
                 }
             }
         }

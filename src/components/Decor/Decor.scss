@@ -58,13 +58,12 @@
 
     &_text {
         min-width: 250px !important;
-
-        // font-family: 'Obrazec';
         font-family: 'Finlandica';
-        // font-family: 'Outfit';
-        // font-family: 'CrimsonPro';
-
         font-weight: 600;
+
+        @media(max-width: 600px) {
+            font-size: 12px;
+        }
     }
 
     &__info {
@@ -136,7 +135,7 @@
                 max-width: 1000px;
 
                 @media(max-width: 800px) {
-                    width: 150vw;
+                    width: 130vw;
                 }
             }
         }
